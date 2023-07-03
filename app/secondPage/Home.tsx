@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import heroImage from '../Resources/hero-picc.png';
+import heroImage from '../Resources/wepik-export-202305311201196YQU 1.png';
 import { BsArrowRight } from 'react-icons/bs';
 
 const Home = () => {
@@ -8,8 +8,9 @@ const Home = () => {
     <div className='container relative max-w-full bg-zinc-950 border-cyan-400 h-90'>
       <div className='grid-cols-2 w-5/6 relative justify-between items-center border-orange-300 h-full'>
         <div className='flex flex-col gap-16 justify-between w-3/5 h-full border-red-700 my-10 mt-200'>
+        {/* <p className='text-orange-500 text-2xl'>For Recruiters</p> */}
           <div className='flex gap-14 flex-col text-white'>
-          <p className='text-orange-500 text-2xl mt-10'>For Job Seekher</p>
+          <p className='text-orange-500 text-2xl mt-10'>For Recruiters</p>
             
             <p className='text-7xl font-semibold space-y-5  -mt-5 '> 
             <span className="block">We Have Best</span>
@@ -28,7 +29,7 @@ const Home = () => {
          </div>
       </div>
       <Image
-        className='absolute w-2/5 right-0 top-13'
+        className='absolute w-2/5 right-0 top-12'
         src={heroImage}
         alt=''
       />

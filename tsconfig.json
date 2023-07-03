@@ -23,6 +23,8 @@
       "@component/*": ["./*"]
     }
   },
+
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/component/Whysus.jsx", "app/LandingPage/HomeScreen.tsx"],
+
   "exclude": ["node_modules"]
 }
