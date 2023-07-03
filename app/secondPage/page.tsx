@@ -3,7 +3,7 @@ import Hero from '../component/Hero';
 import Navbar from '../component/Navbar';
 import Process from './ProcessesForEmployee';
 import Jobs from './Candidates';
-import Fotter from '../component/Fotter';
+import Footer from './Footer';
 function page() {
   return (
     <div>
@@ -11,7 +11,7 @@ function page() {
         <Hero />
         <Process />
         <Jobs />
-        <Fotter />
+        <Footer />
     </div>
   )
 }

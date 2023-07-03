@@ -1,7 +1,10 @@
+
 import React from 'react';
 import Image from 'next/image';
 import EmployeePageImage from '../Resources/EmployeePageImage.png';
+
 const Process = () => {
+    
   return (
     <div className='relative max-w-full container text-black my-40'>
       <div className='relative w-5/6 flex flex-col'>
