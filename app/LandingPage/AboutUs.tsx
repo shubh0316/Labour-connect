@@ -32,5 +32,3 @@ function AboutUs() {
 
 export default AboutUs;           
 
-//shadow and z-index scaling 
-// logo slider in marquee 
