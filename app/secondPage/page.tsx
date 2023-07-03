@@ -1,13 +1,17 @@
 import React from 'react';
-import Fotter from '../component/Fotter';
+import Hero from '../component/Hero';
 import Navbar from '../component/Navbar';
-
+import Process from './ProcessesForEmployee';
+import Jobs from './Candidates';
+import Footer from './Footer';
 function page() {
   return (
     <div>
         <Navbar />
-    
-      <h1>hello</h1>
+        <Hero />
+        <Process />
+        <Jobs />
+        <Footer />
     </div>
   )
 }
