@@ -1,19 +1,18 @@
 import React from 'react';
-import Home from './Home'
-import Nav from './Nav'
-// import Footer1 from './Footer1'
-// import Jobs1 from './Jobs1'
-// import Process1 from './Process1'
+
+import Hero from '../component/Hero';
+import Navbar from '../component/Navbar';
+import Process from './ProcessesForEmployee';
+import Jobs from './Candidates';
+import Footer from './Footer';
 function page() {
   return (
     <div>
-         <Nav />
-        <Home /> 
-        {/* <Jobs1 /> */}
-        {/* <Process1 />
-       
-        <Footer1 />  */}
-    
+        <Navbar />
+        <Hero />
+        <Process />
+        <Jobs />
+        <Footer />
     </div>
   )
 }
