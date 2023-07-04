@@ -5,37 +5,27 @@ import { BsArrowRight } from 'react-icons/bs';
 
 const Application = () => {
   return (
-    <div className='relative bottom-20 max-w-full bg-zinc-950 border-cyan-400 h-auto' style={{ width: '100%', height: '480px' }}>
-        <div className='flex flex-col flex-start w-1/2 '>
-    <div className='text-orange-500 mt-20 mb-5 ml-20 text-2xl '>
-      Our Staffing Services Process
+    <div className="relative bg-zinc-950 border-cyan-400 mt-20">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-screen-lg mx-auto p-6">
+        <div className="lg:w-2/3">
+          <div className="text-orange-500 mt-6 mb-3 text-2xl sm:text-3xl ml-4 sm:ml-0">
+            Our Staffing Services Process
+          </div>
+          <div className="text-white text-6xl font-bold ml-4 sm:ml-0">
+            Unlock Your Staffing Success With Us
+          </div>
+          <div className="text-white mt-6 text-xl sm:text-2xl font-sans ml-4 sm:ml-0">
+            Careful planning makes us confident, developed with best practices so that the project can be maintained. We always test projects before they are shipped.
+          </div>
+          <button className="flex items-center justify-center gap-4 text-xl sm:text-2xl w-56 h-12 mt-8 ml-4 sm:ml-0 rounded-full bg-orange-500 text-white hover:bg-orange-600 transform hover:scale-105">
+            Explore Jobs <BsArrowRight size={32} />
+          </button>
+        </div>
+        <div className="lg:w-1/2 flex flex-end">
+          <Image className=" mt-40 ml-80 w-auto h-auto" src={Macbook} alt="" width={700} height={400} />
+        </div>
+      </div>
     </div>
-    <div className='text-white ml-20 text-6xl font-bold'>
-        Unlock Your Staffing Success With Us 
-
-    </div>
-    <div className='text-white mt-10  ml-20 text-2xl  font-sans'>
-    Careful planning makes us confident, developed with best practices so that the project can be maintained. We always test projects before they are shipped.
-
-    </div>
-    <button className='flex items-center justify-center gap-8 text-xl w-64 h-14  mt-20 ml-20 rounded-full bg-orange-500 text-white hover:bg-orange-600 transform hover:scale-125'>
-              Explore Jobs <BsArrowRight size={32} />
-            </button>
-    </div>
-    <Image
-        className='absolute w-2/5 right-0 bottom-0 '
-        src={Macbook}
-        alt=''
-      />
-    </div>
-    
-
-  
-  
-  
-    
-  
-
   );
 };
 
