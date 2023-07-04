@@ -22,7 +22,15 @@ const Application = () => {
           </button>
         </div>
         <div className="lg:w-1/2 flex flex-end">
-          <Image className=" mt-40 ml-80 w-auto h-auto" src={Macbook} alt="" width={700} height={400} />
+          <div className="hidden lg:block">
+            <Image
+              className="mt-40 ml-80 w-auto h-auto"
+              src={Macbook}
+              alt=""
+              width={700}
+              height={400}
+            />
+          </div>
         </div>
       </div>
     </div>
