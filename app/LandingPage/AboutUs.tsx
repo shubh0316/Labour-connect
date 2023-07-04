@@ -6,7 +6,7 @@ function AboutUs() {
   return (
     <div className="flex flex-col sm:flex-row">
       <div className="flex items-center justify-center w-full sm:w-1/2">
-        <div className="w-90 h-90 mb-10 sm:mb-0 sm:ml-4 transform hover:scale-110">
+        <div className="w-90 h-90 mb-10 sm:mb-0 sm:ml-40 sm:mr-4 transform hover:scale-110">
           <Image src={About} alt="" layout="responsive" width={400} height={400} />
         </div>
       </div>

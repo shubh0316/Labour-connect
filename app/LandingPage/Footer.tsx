@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="bg-footer">
       
-        <div className="py-60 px-20 grid grid-cols-1 gap-8 justify-between rounded-2xl md:grid-cols-3">
+        <div className="py-20 px-20 grid grid-cols-1 gap-16 justify-between rounded-2xl md:grid-cols-3">
           <div>
             <Image src={navLogo} quality={100} height={90} alt="menu" />
           </div>

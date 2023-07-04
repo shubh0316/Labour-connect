@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center">
+        <a href="https://fms.loadlc.com/login" className="flex items-center">
           <Image src={navLogo} className="h-14 w-60 mr-3" alt="labour connect" />
         </a>
         <button
