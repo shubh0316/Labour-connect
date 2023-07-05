@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import navLogo from '../Resources/nav-logo.png';
+import navLogo from '../Resources/nav-logo.png'
 
 const Nav = () => {
   return (

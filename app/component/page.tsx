@@ -1,14 +1,19 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import CardSection from "./CardSection";
-// import Fotter from "./Fotter";
+import ScrollSection from "./ScrollSection";
+import Job from "./Job";
+import Fotter from "./Fotter";
+
 const dashboard = () => {
     return (
     <>
     <Navbar />
     <Hero />
     <CardSection />
-    {/* <Fotter /> */}
+    <ScrollSection />
+    <Job />
+    <Fotter />
     </>
     )
 }

@@ -22,7 +22,7 @@ const Home = () => {
             </p>
             <div className='flex relative '>
             <button className='flex items-center absolute mt-4 justify-center gap-3 text-xl w-55 h-25 rounded-full bg-orange-500 text-white p-2'>
-                Post Your Job <BsArrowRight size={24} />
+                Explore Job <BsArrowRight size={24} />
               </button></div>
           </div>
          </div>
