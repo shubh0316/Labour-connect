@@ -13,7 +13,7 @@ const CardSection = () => {
         We will help you get your dream Job
       </p>
       <div className='flex md:flex-row flex-col justify-between my-10 gap-10'>
-        <div className='flex flex-col gap-6 m:w-1/3 drop-shadow-lg bg-gray-200 rounded-xl p-8 hover:bg-orange-500'>
+        <div className='flex flex-col gap-6 m:w-1/3 drop-shadow-lg bg-gray-200 rounded-xl p-8 z-20 hover:bg-orange-500 transform hover:scale-125'>
           <p className='text-xl font-semibold'>Excellent Services</p>
           <p>
             Lorem ipsum dolor sit amet. 33 pariatur asperiores cum aliquam
@@ -27,7 +27,7 @@ const CardSection = () => {
                         className='absolute -bottom-4 -right-0 overflow-hidden'
                         src={Capa_1} alt={''}            />
         </div>
-        <div className='flex flex-col gap-6 m:w-1/3 drop-shadow-xl rounded-xl p-8 hover:bg-orange-500'>
+        <div className='flex flex-col gap-6 m:w-1/3 drop-shadow-xl rounded-xl p-8 z-20 hover:bg-orange-500 transform hover:scale-125'>
           <p className='text-xl font-semibold'>Excellent Services</p>
           <p className='mb-20'>
             Lorem ipsum dolor sit amet. 33 pariatur asperiores cum aliquam
@@ -41,7 +41,7 @@ const CardSection = () => {
                         className='absolute -bottom-1 -right-0 overflow-hidden'
                         src={Capa_2} alt={''}            />
         </div>
-        <div className='flex flex-col gap-6 m:w-1/3 drop-shadow-lg bg-gray-200 rounded-xl p-8 hover:bg-orange-500'>
+        <div className='flex flex-col gap-6 m:w-1/3 drop-shadow-lg bg-gray-200 rounded-xl p-8 z-10 hover:bg-orange-500 transform hover:scale-125'>
           <p className='text-xl font-semibold'>Excellent Services</p>
           <p>
             Lorem ipsum dolor sit amet. 33 pariatur asperiores cum aliquam

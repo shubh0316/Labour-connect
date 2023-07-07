@@ -28,7 +28,7 @@ const Application = () => {
               src={Macbook}
               alt=""
               width={900}
-              height={400}
+              height={600}
             />
           </div>
         </div>
