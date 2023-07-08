@@ -1,40 +1,32 @@
 import React from 'react';
 import Image from 'next/image';
-import heroImage from '../Resources/hero-picc.png';
+import Ellipse from '../Resources/Ellipse.png';
 import { BsArrowRight } from 'react-icons/bs';
+import HeroSectionAnimation from './HeroSectionAnimation';
+import 'animate.css';
 
 const Home = () => {
   return (
-    <div className='container relative max-w-full bg-zinc-950 border-cyan-400 h-90'>
-      <div className='grid-cols-2 w-5/6 relative justify-between items-center border-orange-300 h-full'>
-        <div className='flex flex-col gap-16 justify-between w-3/5 h-full border-red-700 my-10 mt-200'>
-          <div className='flex gap-14 flex-col text-white'>
-          <p className='text-orange-500 text-2xl mt-10'>For Job Seekher</p>
-            
-            <p className='text-7xl font-semibold space-y-5  -mt-5 '> 
-            <span className="block">We Have Best</span>
-            <span className="block">Solution For You.</span></p>
-            <p className='text-xl leading-8'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-              libero quaerat, pariatur eum doloribus sequi enim est sed, eveniet
-              accusantium hic adipisci repellendus praesentium ipsa possimus
-              veniam optio beatae laudantium.
-            </p>
-            <div className='flex relative '>
-            <button className='flex items-center absolute mt-4 justify-center gap-3 text-xl w-55 h-25 rounded-full bg-orange-500 text-white p-2'>
-                Explore Job <BsArrowRight size={24} />
-              </button></div>
-          </div>
-         </div>
+    <div className="relative h-screen">
+      <Image className="absolute h-full w-full" src={Ellipse} alt="" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <div className="text-4xl mb-10 text-zinc-800 animate__animated animate__fadeInLeft">
+          Labour Connect
+        </div>
+        <div className="text-8xl items-center text-zinc-800 justify-content animate__animated animate__fadeInRight animate__slower">
+          We have the best solution for you.
+        </div>
+        <p className="text-xl text-zinc-800 mt-10 w-3/5 animate__animated animate__bounce">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit adipiscing bibendum est ultricies integer quis.
+        </p>
+        <button className="flex items-center justify-between bg-orange-500 hover:bg-orange-700 text-white font-semibold mt-10 text-2xl py-[1%] px-[6%] rounded-full animate__animated animate__fadeInUp">
+          <span className="flex-grow text-zinc-800">Explore Jobs</span>
+          <BsArrowRight className="text-zinc-800" />
+        </button>
+        <HeroSectionAnimation />
       </div>
-      <Image
-        className='absolute w-2/5 right-0 top-13'
-        src={heroImage}
-        alt=''
-      />
     </div>
   );
 };
 
 export default Home;
-
