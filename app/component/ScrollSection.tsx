@@ -58,11 +58,12 @@ const ScrollSection = () => {
               </div>
             </div>
             <div className="flex items-center">
-              <Image
-                className="h-8 md:h-full max-w-lg ml-auto"
-                src={stepDetails[step].img}
-                alt=" "
-              />
+            <div className='flex items-center justify-center'>
+             {/* <div className='h-96 w-96  rounded-md mx-52 sm:mx-14 py-8 my-20 bg-black '> */}
+             <div className="box-border h-96 w-96 mx-19 bg-black p-4 border-4">
+              Content goes here
+             </div>
+        </div>
             </div>
           </div>
         </div>

@@ -119,7 +119,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import navLogo from '../Resources/Group 1000002110.png';
-
+import navLogo1 from "../Resources/LOBOUR CONNECT-01 (1) 1.png";
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
@@ -143,8 +143,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        isScrolled ? 'bg-white w-50 rounded-full mt-4'  : 'bg-black'
+      className={`fixed top-0 left-0 w-full z-50 h-30 transition-colors duration-300 ${
+        isScrolled ? 'bg-white w-45 rounded-lg mt-4 h-scrren'  : 'bg-black'
       }`}
     >
       <div className="max-w-screen-xl mx-auto px-4">
@@ -154,7 +154,11 @@ const Navbar = () => {
                isScrolled ? 'text-black ' : 'text-white'
             }
             `}>
-              <Image src={navLogo} className="h-12 w-auto" alt="labour connect" />
+            <Image
+                  src={isScrolled ? navLogo1 : navLogo}
+                  className="h-12 w-auto"
+                  alt="labour connect"
+            />
             </a>
           </div>
           <div className="hidden md:flex md:items-center md:space-x-4">
@@ -188,19 +192,20 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
           <button
-              className={`hover:text-blue-700 px-3 py-2 bg-stone-800 rounded-full ${
-                isScrolled ? 'text-black' : 'text-white'
+              className={`hover:text-blue-700 px-3 py-2 bg-stone-800 rounded-full hidden md:block ${
+                isScrolled ? 'text-white' : 'text-white'
               }`}
             >
               Sign Up
             </button>
-            <button
-              className={`hover:text-blue-700 px-3 py-2 rounded-md  border-rose-700 rounded-full  ${
-                isScrolled ? 'text-black' : 'text-white'
+           <button
+              className={`hover:text-blue-700 px-5 py-2 mx-5 bg-stone-800 border-rose-800 rounded-full hidden md:block ${
+                isScrolled ? 'text-white' : 'text-white'
               }`}
             >
               Log In
-            </button>
+            </button> 
+            
           </div>
           <div className="md:hidden">
             <button
@@ -226,22 +231,35 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg- px-2 pt-2 pb-4">
+        <div className={`md:hidden  px-2 pt-2 pb-4 
+        ${
+          isScrolled ? '' : 'h-screen'
+        }`}>
           <a
             href="#about"
-            className="block text-gray-800 hover:text-blue-700 py-2"
+            className={`block text-black hover:text-blue-700 py-2 ${
+              isScrolled ? 'text-black' : 'text-white'
+            }
+
+            `}
           >
             About
           </a>
           <a
             href="#features"
-            className="block text-gray-800 hover:text-blue-700 py-2"
+            className={`block text-black hover:text-blue-700 py-2 ${
+              isScrolled ? 'text-black' : 'text-white'
+            }
+            `}
           >
             Features
           </a>
           <a
             href="#pricing"
-            className="block text-gray-800 hover:text-blue-700 py-2"
+            className={`block text-black hover:text-blue-700 py-2 ${
+              isScrolled ? 'text-black' : 'text-white'
+            }
+            `}
           >
             Pricing
           </a>
