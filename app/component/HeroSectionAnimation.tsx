@@ -4,7 +4,7 @@ import LeftImage from '../Resources/LeftImage.png';
 import Right from '../Resources/Right.png';
 import Top from '../Resources/Top.png';
 import MacbookCenter from '../Resources/MacbookCenter.png';
-import 'animate.css';
+// import 'animate.css';
 
 function HeroSectionAnimation() {
   return (

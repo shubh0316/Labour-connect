@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Ellipse from '../Resources/Ellipse.png';
 import { BsArrowRight } from 'react-icons/bs';
 import HeroSectionAnimation from './HeroSectionAnimation';
-import 'animate.css';
+// import 'animate.css';
 
 const Home = () => {
   return (
