@@ -231,13 +231,13 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className={`md:hidden  px-2 pt-2 pb-4 
+        <div className={`md:hidden  px-2 pt-2 pb-4  
         ${
-          isScrolled ? '' : 'h-screen'
+          isScrolled ? '' : 'h-screen ' 
         }`}>
           <a
             href="#about"
-            className={`block text-black hover:text-blue-700 py-2 ${
+            className={`block text-black hover:text-blue-700 py-2 mx-80 hover:textShadow duration-500 hover:translate-y-[-5px] text-xl ${
               isScrolled ? 'text-black' : 'text-white'
             }
 
@@ -247,7 +247,7 @@ const Navbar = () => {
           </a>
           <a
             href="#features"
-            className={`block text-black hover:text-blue-700 py-2 ${
+            className={`block text-black hover:text-blue-700 py-2 mx-80 hover:textShadow duration-500 hover:translate-y-[-5px] text-xl ${
               isScrolled ? 'text-black' : 'text-white'
             }
             `}
@@ -256,7 +256,7 @@ const Navbar = () => {
           </a>
           <a
             href="#pricing"
-            className={`block text-black hover:text-blue-700 py-2 ${
+            className={`block text-black hover:text-blue-700 py-2 mx-80 hover:textShadow duration-500 hover:translate-y-[-5px] text-xl ${
               isScrolled ? 'text-black' : 'text-white'
             }
             `}

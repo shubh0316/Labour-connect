@@ -78,7 +78,7 @@ const job = () => {
         </div>
       </div>
                 <div>
-                    <button className='flex items-center relative mt-4 justify-center gap-3 text-xl w-80 h-18 rounded-full bg-black-200 border-2 border-white-500 ... text-white p-2'>
+                    <button className='flex items-center relative mt-4 justify-center gap-3 text-xl w-80 h-18 rounded-full bg-black-200 border-2 border-white-500 ... text-white p-2 hover:textWhite  duration-500 hover:translate-y-[-5px]'>
                     View All Positions <BsArrowRight size={24} />
                     </button>
                   </div>

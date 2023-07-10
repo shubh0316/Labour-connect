@@ -12,9 +12,13 @@ const dashboard = () => {
     <Navbar />
     <Hero />  
      <CardSection /> 
-    {/* <ScrollSection />
+     <ScrollSection />
     <Job />
-    <Fotter /> */}
+
+
+    <Fotter />
+   
+
     </>
     )
 }
