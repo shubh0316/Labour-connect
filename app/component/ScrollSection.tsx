@@ -213,9 +213,9 @@ const ScrollSection = () => {
         <div ref={triggerRef}>
           <div ref={sectionRef} className="scroll-section-inner h-[100vh] w-[300vw] flex flex-row relative">
          
-            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center ">
-              <div className="grid grid-cols-1 md:grid-cols-2 ">
-              <div className="flex items-start mr-10 mt-10 align-items-center mx-40 ">
+            <div className="scroll-section h-full w-[100vw] flex justify-center items-center ">
+              <div className="grid grid-cols-1 md:grid-cols-2 h-full ">
+              <div className="flex items-start mr-10 mt-10 align-items-center mx-40 h-full ">
              <div className="mr-4">
                <BsFill1CircleFill className="text-orange-500 text-4xl p-1" />
                </div>
@@ -226,17 +226,49 @@ const ScrollSection = () => {
              </div>
             </div>
             
-            <div className="box-border h-96 w-96 mx-20 bg-black p-4 border-4">
+            <div className="box-border h-96 w-96  mx-20 bg-black p-4 border-4">
               Content goes here
            </div>
               </div>
            
             </div>
-            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center">
-              <h3>Section 2</h3>
+            <div className="scroll-section h-full w-[100vw] flex justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 h-full ">
+              <div className="flex items-start mr-10 mt-10 align-items-center mx-40 h-full ">
+             <div className="mr-4">
+               <BsFill2CircleFill className="text-orange-500 text-4xl p-1" />
+               </div>
+             
+               <div>
+               <h1 className="text-3xl font-bold mb-2 text-orange-500">Create your profile</h1>
+               <p className="text-gray-700 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut interdum lectus, eu semper lorem. Sed eget leo id justo venenatis venenatis. Nam placerat placerat libero.",</p>
+             </div>
             </div>
-            <div className="scroll-section h-[100vh] w-[100vw] flex justify-center items-center">
-              <h3>Section 3</h3>
+            
+            <div className="box-border h-96 w-96  mx-20 bg-black p-4 border-4">
+              Content goes here
+           </div>
+              </div>
+           
+            </div> 
+            <div className="scroll-section h-full w-[100vw] flex justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 h-full ">
+              <div className="flex items-start mr-10 mt-10 align-items-center mx-40 h-full ">
+             <div className="mr-4">
+               <BsFill1CircleFill className="text-orange-500 text-4xl p-1" />
+               </div>
+             
+               <div>
+               <h1 className="text-3xl font-bold mb-2 text-orange-500">Create your profile</h1>
+               <p className="text-gray-700 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut interdum lectus, eu semper lorem. Sed eget leo id justo venenatis venenatis. Nam placerat placerat libero.",</p>
+             </div>
+            </div>
+            
+            <div className="box-border h-96 w-96  mx-20 bg-black p-4 border-4">
+              Content goes here
+           </div>
+              </div>
+           
             </div>
           </div>
         </div>
