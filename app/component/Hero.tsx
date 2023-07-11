@@ -7,10 +7,10 @@ import HeroSectionAnimation from './HeroSectionAnimation';
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen">
-      <Image className="absolute inset-0 w-full h-full object-cover" src={Ellipse} alt="" />
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-6 sm:px-10">
-        <div className="text-3xl sm:text-4xl mb-6 sm:mb-10 text-zinc-800 animate__animated animate__fadeInLeft">
+    <div className="relative h-screen">
+      <Image className="absolute h-full w-full" src={Ellipse} alt="" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <div className="text-4xl mb-10 text-zinc-800 animate__animated animate__fadeInLeft">
           Labour Connect
         </div>
         <div className="text-5xl sm:text-8xl text-center text-zinc-800 animate__animated animate__fadeInRight animate__slower">

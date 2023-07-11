@@ -12,12 +12,11 @@ const dashboard = () => {
     <Navbar />
     <Hero />  
      <CardSection /> 
-<<<<<<< HEAD
+
      <Service />
-    {/* <ScrollSection />
-=======
      <ScrollSection />
->>>>>>> 38764a19514bf9258fd7cccaab6b5a97ada3811c
+
+  
     <Job />
 
 
