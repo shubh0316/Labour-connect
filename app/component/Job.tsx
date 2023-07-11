@@ -78,15 +78,17 @@ const job = () => {
         </div>
       </div>
                 <div>
-                    <button className='flex items-center relative mt-4 justify-center gap-3 text-xl w-80 h-18 rounded-full bg-black-200 border-2 border-white-500 ... text-white p-2'>
+                    <button className='flex items-center relative mt-4 justify-center gap-3 text-xl w-80 h-18 rounded-full bg-black-200 border-2 border-white-500 ... text-white p-2 hover:textWhite  duration-500 hover:translate-y-[-5px]'>
                     View All Positions <BsArrowRight size={24} />
                     </button>
                   </div>
                 </div>
               </div>
-              <div className='flex  items-start justify-end'>
-                <Image className='h-70 max-w-lg mt-6 mr-6 mt-10 mb-20' src={stepDetails[step].img} alt=' ' />
-              </div>
+              <div className='flex items-center justify-center'>
+             <div className='h-96 w-96 rounded-md py-8 my-20 bg-white '>
+              Content goes here
+             </div>
+        </div>
             </div>
           </div>
         );
