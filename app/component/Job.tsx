@@ -8,16 +8,16 @@ const job = () => {
  const [step ,setStep] = useState(0);
  
  const [isDefault,setDefault] = useState(true);
- const [title,setTitle] = useState("");
+
   const stepDetails = [
   //  "Default message", "I am a truck driver", "I am a fork lifter"
     {
       title: "Find your Dream Job in just one click",
-      content: "FInd job openings here"
+      content: "Discover your dream job with one click. Our user-friendly platform offers a seamless job search experience, connecting with you with exciting opportunities. Explore diverse industries,companies, and positions that align with your passions and aspirations. From entry-level to executive roles, we have options for everyone. Let us guide you towards a fulfilling and rewarding career that brings out your potential in you."
     },
     {
       title: "Truck Driver",
-      content: "I am a truck driver"
+      content: "Accelerate your truck driving career. Join our team of skilled proessionals, delivering goods nationwide with precision and reliability. Experience the open road and the satisfaction of keeping America moving. Apply now!"
     },
     {
       title: "Fork lifter",
@@ -32,12 +32,13 @@ const job = () => {
       content : "i m xyz"
     }
   ]
+  const [title,setTitle] = useState(stepDetails[0].title);
   const [content, setContent] = useState(stepDetails[0].content);
   const handleButtonClick = (index: number) => {
      setContent(stepDetails[index].content);
      setDefault(false);
      setTitle(stepDetails[index].title);
-
+    setDefault(false);
   };
 return (
     <div className='container max-w-full  mx-auto relative bg-zinc-950 border-cyan-400 h-full' >
@@ -93,11 +94,12 @@ return (
                 </div>
               </div>
           
-              <div className='flex h-80 items-center justify-center'>
-             <div className='h-96 w-96 rounded-md py-8 my-40 bg-white  text-black'>
-              {<h1 className="text-rose-800">{title}</h1>}
-              {content}
-             
+              <div className='flex h-80 items-center justify-center mt-24'>
+             <div className='h-[32rem] w-96 rounded-md bg-white  text-black mt-[10vh]'>
+              {isDefault && <h1 className="text-orange-600  text-3xl items-center mx-3 mt-8">{title}</h1>}
+              {!isDefault && <h1 className="text-orange-600 text-3xl items-center mx-3 mt-8">{title}</h1>}
+              <p className="mx-3 items-center mt-2">{content}</p>
+             {!isDefault && <button className="bg-red-400 mt-70 mx-15 items-center"> Apply now </button>}
              </div>
         </div>
             </div>
