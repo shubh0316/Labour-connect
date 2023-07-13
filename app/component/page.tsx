@@ -1,18 +1,28 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import Whyus from "./Whysus";
-import Process from "./Process";
-import Jobs from "./Jobs";
+import HeroSectionAnimation from "./HeroSectionAnimation";
+import CardSection from "./CardSection";
+import ScrollSection from "./ScrollSection";
+import Job from "./Job";
 import Fotter from "./Fotter";
+import Service from "./Service";
 const dashboard = () => {
     return (
     <>
     <Navbar />
-    <Hero />
-    <Whyus />
-    <Process />
-    <Jobs />
+    <Hero />  
+     <CardSection /> 
+
+     <Service />
+     <ScrollSection />
+
+  
+    <Job />
+
+
     <Fotter />
+   
+
     </>
     )
 }
