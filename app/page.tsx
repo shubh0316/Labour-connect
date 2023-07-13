@@ -12,6 +12,7 @@ export default function Home() {
       <LandingNavbar />
       <WelcomePage />
       <HomeScreen />
+      
       <CardSection />
       <AboutUs />
       <Application />

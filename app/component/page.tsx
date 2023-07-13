@@ -1,4 +1,4 @@
-import Hero from "./Hero";
+
 import Navbar from "./Navbar";
 import HeroSectionAnimation from "./HeroSectionAnimation";
 import CardSection from "./CardSection";
@@ -10,7 +10,7 @@ const dashboard = () => {
     return (
     <>
     <Navbar />
-    <Hero />  
+  
      <CardSection /> 
 
      <Service />
