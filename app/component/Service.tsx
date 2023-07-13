@@ -11,8 +11,8 @@ export default function Service() {
             We Provide Multiple Types Of Hiring Services
           </h1>
         </div>
-        <div className="flex flex-col sm:flex-row justify-center items-center space-y-10 sm:space-y-0 sm:space-x-10 animate__animated animate__fadeInTopLeft">
-          <div className="bg-white rounded-3xl w-full sm:w-[30rem] h-[30rem]">
+        <div className="flex flex-col sm:flex-row justify-center items-center space-y-10 sm:space-y-0 sm:space-x-10 animate__animated animate__fadeInTopLeft ">
+          <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
                 Temporary details
@@ -27,7 +27,7 @@ export default function Service() {
               </button>
             </div>
           </div>
-          <div className="bg-white rounded-3xl w-full sm:w-[30rem] h-[30rem]">
+          <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
                 Temporary details
@@ -42,7 +42,7 @@ export default function Service() {
               </button>
             </div>
           </div>
-          <div className="bg-white rounded-3xl w-full sm:w-[30rem] h-[30rem]">
+          <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
                 Temporary details
@@ -59,7 +59,7 @@ export default function Service() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-10 sm:space-y-0 sm:space-x-10 py-10 animate__animated animate__fadeInBottomRight">
-          <div className="bg-white rounded-3xl w-full sm:w-[30rem] h-[30rem]">
+          <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
                 Temporary details
@@ -74,7 +74,7 @@ export default function Service() {
               </button>
             </div>
           </div>
-          <div className="bg-white rounded-3xl w-full sm:w-[30rem] h-[30rem]">
+          <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
                 Temporary details
@@ -89,7 +89,7 @@ export default function Service() {
               </button>
             </div>
           </div>
-          <div className="bg-white rounded-3xl w-full sm:w-[30rem] h-[30rem]">
+          <div className="bg-white rounded-3xl w-full   transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
                 Temporary details
