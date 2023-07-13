@@ -97,9 +97,10 @@ return (
               <div className='flex h-80 items-center justify-center mt-24'>
              <div className='h-[32rem] w-96 rounded-md bg-white  text-black mt-[10vh]'>
               {isDefault && <h1 className="text-orange-600  text-3xl items-center mx-3 mt-8">{title}</h1>}
-              {!isDefault && <h1 className="text-orange-600 text-3xl items-center mx-3 mt-8">{title}</h1>}
-              <p className="mx-3 items-center mt-2">{content}</p>
-             {!isDefault && <button className="bg-red-400 mt-70 mx-15 items-center"> Apply now </button>}
+              {isDefault && <p className="mx-3 items-center mt-2">{content}</p>}
+              {!isDefault && <h1 className="text-orange-600 text-3xl items-center mx-4 mt-8">{title}</h1>}
+             {!isDefault && <p className="mx-3"> {content}</p>}
+            {!isDefault && <button className="bg-orange-500  text-white items-center my-56 mx-8 h-16 w-80 rounded-full"> Apply now </button>}
              </div>
         </div>
             </div>
