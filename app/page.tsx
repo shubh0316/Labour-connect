@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <LandingNavbar />
       <WelcomePage />
-      <HomeScreen />
-      
-      <CardSection />
+      {/* <HomeScreen /> */}
       <AboutUs />
+      <CardSection />
+    
       <Application />
       <Footer />
     </>
