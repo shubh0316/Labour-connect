@@ -21,7 +21,7 @@ function HeroSectionAnimation() {
           alt=""
         />
         <Image
-          className="relative w-[40rem] h-80 mt-20 animate__animated animate__slideInDown animate__slower"
+          className="relative w-[40rem] h-80 mt-20 animate__animated animate__slideInDown"
           src={MacbookCenter}
           alt=""
         />
