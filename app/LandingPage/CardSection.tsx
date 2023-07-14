@@ -155,6 +155,9 @@ function CardSection() {
                 alt="hands"
                 layout="fill"
                 objectFit="contain"
+                className={` ${
+                  isOrangeHovered ? '-mt-12' : 'mt-20'
+                }`}
               />
             </div>
           </div>
