@@ -12,7 +12,7 @@ const AboutUs = () => {
       </div>
       <div className="w-full sm:w-1/2 text-black text-left text-lg sm:text-2xl font-sans">
         <div className="text-orange-500 text-4xl font-bold px-10 mt-10">About us</div>
-        <div className="text-black-500 font-semibold text-3xl sm:text-5xl px-10 mb-6 sm:mb-10">
+        <div className="text-black-500 font-semibold text-3xl mt-2 sm:text-5xl px-10 mb-6 sm:mb-10">
           We’re Helping Companies & Job Seekers in a Better Way
         </div>
         <p className="px-10 mb-4">

@@ -46,7 +46,7 @@ function CardSection() {
       <div className="flex flex-col space-y-8 md:flex-row">
         <div className="flex flex-col space-y-3 md:w-2/3">
           <span className="text-3xl mt-10 py-4 px-6 md:mt-20 md:py-20 md:px-20 w-full text-orange-600 whitespace-nowrap animate-bounce">
-            why choose us
+            Why Choose Us
           </span>
           <h2 className="text-5xl font-bold text-zinc-900 px-6 md:px-20 whitespace-nowrap animate__animated animate__rubberBand">
             <span className="text-3xl md:text-4xl">We will help you</span>
