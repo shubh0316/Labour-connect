@@ -119,7 +119,7 @@ function CardSection() {
             <br className="md:hidden" /> 
             <span className="text-3xl md:text-4xl"> Success With Us</span>
           </h2>
-          <p className="text-3xl text-zinc-900  px-6 py-4 md:px-20 md:py-10 leading-loose animate__animated animate__bounceInLeft">
+          <p className="text-2xl text-zinc-900  px-6 py-4 md:px-20 md:py-10 leading-loose animate__animated animate__bounceInLeft">
             Boost your staffing success with our dynamic services. With us, you'll harness 
             personalized solutions and expert support. Maximize your potential and achieve
             extraordinary results. Join us today and revolutionize your staffing approach.
@@ -150,15 +150,16 @@ function CardSection() {
                 isOrangeHovered ? 'translate-y-2' : 'translate-y-0'
               }`}
             >
-              <Image
-                src={Hands}
-                alt="hands"
-                layout="fill"
-                objectFit="contain"
-                className={` ${
-                  isOrangeHovered ? '-mt-12' : 'mt-20'
-                }`}
-              />
+             <Image
+         src={Hands}
+            alt="hands"
+            layout="fill"
+            objectFit="contain"
+            className={`${
+              isOrangeHovered ? '-mt-12 -ml-11' : 'mb-0 '
+            } ${isOrangeHovered ? 'scale-100' : 'scale-150 -ml-4'}`}
+          />
+
             </div>
           </div>
           <div
@@ -172,8 +173,11 @@ function CardSection() {
               with highly qualified professionals who make
             </p>
             {!isOrangeHovered && (
-              <div className="absolute w-[20rem] h-[25rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2">
-                <Image src={Sand} alt="" layout="fill" objectFit="contain" />
+              <div className="absolute w-[13rem] h-[13rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2">
+                <Image src={Sand} alt="" layout="fill" objectFit="contain"
+                
+               />
+   
               </div>
             )}
           </div>
@@ -188,7 +192,7 @@ function CardSection() {
               <p className="text-3xl md:text-4xl font-bold">Simple To Use</p>
               <p
                 className={`text-xl ${
-                  isGraySecondHovered ? 'line-clamp-none mt-4' : 'line-clamp-3'
+                  isGraySecondHovered ? 'line-clamp-none mt-4' : 'line-clamp-3 mt-2'
                 }`}
               >
                 Streamline and enhance recruitment with our simplified
@@ -207,7 +211,11 @@ function CardSection() {
                 alt="hands"
                 layout="fill"
                 objectFit="contain"
+                className={`${
+                  isOrangeHovered ? '-mt-12 -ml-11' : 'mb-3 '
+                } ${isOrangeHovered ? 'scale-100' : 'scale-150 -ml-4'}`}
               />
+    
             </div>
           </div>
           <div
@@ -222,7 +230,7 @@ function CardSection() {
               opportunities.
             </p>
             {!isGraySecondHovered && (
-              <div className="absolute w-[20rem] h-[25rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="absolute w-[13rem] h-[13rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2">
                 <Image src={Bag} alt="" layout="fill" objectFit="contain" />
               </div>
             )}
