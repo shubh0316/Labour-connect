@@ -53,7 +53,7 @@ function ScrollSection() {
                   <h1 className="text-3xl font-bold mb-2 text-orange-500  mx-3">
                      Create your profile
                      <div className="w-45 border-black overflow-x-clip">
-                     <p className="text-black font-medium text-base mt-2"> 
+                     <p className="text-black font-medium text-base mt-2 leading-loose"> 
                      Unlock job opportunites by creating profile.Showcase your qualifications,experience,
                      and interests to stand out in the job market. Start applying today and let your profile 
                      speak for itself
@@ -72,9 +72,9 @@ function ScrollSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className=" flex mx-40 mt-40">
                   <BsFill2CircleFill className="text-orange-500 p-1 h-20 w-20 text-4xl -my-5" />
-                  <h1 className="text-3xl font-bold mb-2 text-orange-500  mx-3">
+                  <h1 className="text-3xl font-bold mb-2 text-orange-500  mx-3 ">
                     Apply for Jobs
-                     <p className="text-black font-medium text-base mt-2"> 
+                     <p className="text-black font-medium text-base mt-2 leading-loose"> 
                      Discover and apply for your ideal job. Our platform connects with opportunites that 
                      perfectly mtch your qualification and aspirants. Take the first step towards your 
                      deam career today.
@@ -94,7 +94,7 @@ function ScrollSection() {
                   <BsFill3CircleFill className="text-orange-500 p-1 h-24 w-24 text-4xl -my-7" />
                   <h1 className="text-3xl font-bold mb-2 text-orange-500  mx-3">
                     Complete the interview process and get hired
-                     <p className="text-black font-medium text-base mt-2"> 
+                     <p className="text-black font-medium text-base mt-2 leading-loose"> 
                      Seize the opportunity to showcase your skills,abilities, and achievements during 
                       interviews with renowned companies. Start a rewarding career joruney by 
                       demonstrating your true value and securing a successful job.

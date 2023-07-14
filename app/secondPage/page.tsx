@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Hero from '../component/Hero';
+// import Hero from '../component/Hero';
 import Navbar from '../component/Navbar';
 import Process from './ProcessesForEmployee';
 import Jobs from './Candidates';
@@ -9,7 +9,7 @@ function page() {
   return (
     <div>
         <Navbar />
-        <Hero />
+        {/* <Hero /> */}
         <Process />
         <Jobs />
         <Footer />
