@@ -13,7 +13,7 @@ const dashboard = () => {
     <Hero />
      <CardSection /> 
 
-     <Service />
+     {/* <Service /> */}
      <ScrollSection />
 
   

@@ -12,8 +12,9 @@ const employeePage = () => {
     <Navbar />
     <Hero />
      <CardSection /> 
-     <Service />
+  
      <ScrollSection />
+     <Service />
     <Fotter />
     </>
     )

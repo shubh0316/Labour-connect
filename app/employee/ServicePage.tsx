@@ -13,14 +13,14 @@ export default function Service() {
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-10 sm:space-y-0 sm:space-x-10 animate__animated animate__fadeInTopLeft ">
           <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
-            <div className="flex justify-center flex-col text-orange-400 items-center">
+            <div className="flex justify-center flex-col text-orange-400 items-center mb-14">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
-                Temporary details
+                Temporary Workforce
               </h1>
               <h2 className="text-xl text-zinc-900 px-6 sm:px-20">
-                For those needs ranging from same-day emergency replacements to
-                long-term contingent staff, this solution is our most flexible
-                and the cornerstone of our business.
+                From urgent replacements to long-term staffing needs, our flexible solutions are the 
+                cornerstone of our business. Count on us for adaptable and reliable staffing solutions
+                that meet your requirements efficiently.
               </h2>
               <button className="flex w-[60%] h-[40%] items-center justify-between bg-orange-500 hover:bg-orange-700 text-white font-semibold mt-10 sm:mt-20 text-2xl py-[4%] px-[6%] rounded-full animate__animated animate__fadeInUp">
                 <span className="flex-grow text-zinc-800">Recruit now</span>
@@ -30,27 +30,27 @@ export default function Service() {
           <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
-                Temporary details
+                Temporary To-Hire
               </h1>
               <h2 className="text-xl text-zinc-900 px-6 sm:px-20">
-                For those needs ranging from same-day emergency replacements to
-                long-term contingent staff, this solution is our most flexible
-                and the cornerstone of our business.
+              Expand your workforce with a trusted partner who embraces your hiring criteria. We 
+              deliver qualified candidates for seamless integration into your permanent workforce,
+              empowering your business to thrive and grow.
               </h2>
               <button className="flex w-[60%] h-[40%] items-center justify-between bg-orange-500 hover:bg-orange-700 text-white font-semibold mt-10 sm:mt-20 text-2xl py-[4%] px-[6%] rounded-full animate__animated animate__fadeInUp">
-                <span className="flex-grow text-zinc-800">Recruit now</span>
+                <span className="flex-grow text-zinc-800 ">Recruit now</span>
               </button>
             </div>
           </div>
           <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
-                Temporary details
+            Direct-Hire-Placement
               </h1>
               <h2 className="text-xl text-zinc-900 px-6 sm:px-20">
-                For those needs ranging from same-day emergency replacements to
-                long-term contingent staff, this solution is our most flexible
-                and the cornerstone of our business.
+                Supercharge your full-time hiring process with LC as your Recruitment Process 
+                Outsourcing(RPO) partner. Experience accelerated results and seamless permanent
+                staff integration. Trust us to feel your success.
               </h2>
               <button className="flex w-[60%] h-[40%] items-center justify-between bg-orange-500 hover:bg-orange-700 text-white font-semibold mt-10 sm:mt-20 text-2xl py-[4%] px-[6%] rounded-full animate__animated animate__fadeInUp">
                 <span className="flex-grow text-zinc-800">Recruit now</span>
@@ -62,12 +62,13 @@ export default function Service() {
           <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
-                Temporary details
+               Workforce LC
               </h1>
               <h2 className="text-xl text-zinc-900 px-6 sm:px-20">
-                For those needs ranging from same-day emergency replacements to
-                long-term contingent staff, this solution is our most flexible
-                and the cornerstone of our business.
+                Access our elite team of administrative support professionals, available for on-site or 
+                remote work. They undergo rigorous screening and assessment, ensuring top-notch 
+                quality and exceptional support for your business. Elevate your operations with 
+                confidence
               </h2>
               <button className="flex w-[60%] h-[40%] items-center justify-between bg-orange-500 hover:bg-orange-700 text-white font-semibold mt-10 sm:mt-20 text-2xl py-[4%] px-[6%] rounded-full animate__animated animate__fadeInUp">
                 <span className="flex-grow text-zinc-800">Recruit now</span>
@@ -77,12 +78,12 @@ export default function Service() {
           <div className="bg-white rounded-3xl w-full  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
-                Temporary details
+              Payroll Processing Solution
               </h1>
               <h2 className="text-xl text-zinc-900 px-6 sm:px-20">
-                For those needs ranging from same-day emergency replacements to
-                long-term contingent staff, this solution is our most flexible
-                and the cornerstone of our business.
+               Simplify payroll processing with our support services. Automate distribution of pay slips 
+               and maintain compliant data records effortlessly. Focus on growth while we handle the 
+               rest efficiently and accurately.
               </h2>
               <button className="flex w-[60%] h-[40%] items-center justify-between bg-orange-500 hover:bg-orange-700 text-white font-semibold mt-10 sm:mt-20 text-2xl py-[4%] px-[6%] rounded-full animate__animated animate__fadeInUp">
                 <span className="flex-grow text-zinc-800">Recruit now</span>
@@ -92,12 +93,12 @@ export default function Service() {
           <div className="bg-white rounded-3xl w-full   transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-orange-100 duration-300 sm:w-[30rem] h-[30rem]">
             <div className="flex justify-center flex-col text-orange-400 items-center">
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
-                Temporary details
+                Permanent Workforce
               </h1>
               <h2 className="text-xl text-zinc-900 px-6 sm:px-20">
-                For those needs ranging from same-day emergency replacements to
-                long-term contingent staff, this solution is our most flexible
-                and the cornerstone of our business.
+                Experience the power of our hybrid solution,combining temporary staffing and RPO.
+                We handle candidate search, hiring, and deployment as dedicated LC employees,
+                seamlessely integrating them into your workforce for optimal results.
               </h2>
               <button className="flex w-[60%] h-[40%] items-center justify-between bg-orange-500 hover:bg-orange-700 text-white font-semibold mt-10 sm:mt-20 text-2xl py-[4%] px-[6%] rounded-full animate__animated animate__fadeInUp">
                 <span className="flex-grow text-zinc-800">Recruit now</span>

@@ -163,7 +163,7 @@ function CardSection() {
             </div>
           </div>
           <div
-            className={`bg-slate-200 w-full md:w-[90%] h-[${getGreyCardHeight()}] transition-height duration-500 relative`}
+            className={`bg-slate-300 w-full md:w-[90%] h-[${getGreyCardHeight()}] transition-height duration-500 relative`}
           >
             <p className="text-3xl md:text-4xl font-bold py-6 px-6 md:py-10 md:px-10">
              Extensive Talent Network
@@ -184,7 +184,7 @@ function CardSection() {
         </div>
         <div className="flex flex-col justify-center items-center space-y-10 md:py-20 animate__animated animate__backInUp">
           <div
-            className={`bg-slate-200 w-full md:w-[92%] h-[40rem] ${getSecondGrayCardTranslation()} transition-transform duration-500`}
+            className={`bg-slate-300 w-full md:w-[92%] h-[40rem] ${getSecondGrayCardTranslation()} transition-transform duration-500`}
             onMouseEnter={handleSecondHover}
             onMouseLeave={handleSecondHoverExit}
           >

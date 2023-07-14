@@ -4,6 +4,10 @@ import React, { useState } from 'react';
 import Hands from "../Resources/Hands.png";
 import Sand from "../Resources/Sand.png";
 import Image from "next/image";
+import Database from "../Resources/35571886_fp1222_database 1.png";
+import Process from "../Resources/34164103_qualitycontrolone10 1.png";
+import Fast from "../Resources/wepik-export-20230707071614tutv 1.png";
+import Support from "../Resources/wepik-export-20230707072015iDJ1 1.png";
 import "animate.css";
 
 function CardSection() {
@@ -49,14 +53,15 @@ function CardSection() {
             why choose us
           </span>
           <h2 className="text-5xl font-bold text-zinc-900 px-6 md:px-20 whitespace-nowrap animate__animated animate__rubberBand">
-            <span className="text-3xl md:text-4xl">We will help you</span>
+            <span className="text-3xl md:text-4xl">We Will Help You</span>
             <br className="md:hidden" /> 
-            <span className="text-3xl md:text-4xl"> get your dream job</span>
+            <span className="text-3xl md:text-4xl"> Get The Best Employee</span>
           </h2>
-          <p className="text-3xl text-zinc-900  px-6 py-4 md:px-20 md:py-10 leading-loose animate__animated animate__bounceInLeft">
-            Empower your dreams with us. Our expert guidance and personalized
-            approach will guide you toward your dream job. Let's make your
-            career aspirations a reality.
+          <p className="text-2xl text-zinc-900  px-6 py-4 md:px-20 md:py-10 leading-loose animate__animated animate__bounceInLeft">
+            Unlock your workforce's potential with our expert assistance. Our personalized 
+            approach connects you with exceptional talent that perfectly aligns your
+            organization's needs. Discover the best employees who will drive your success forward.
+            Partner with us today!
           </p>
         </div>
         <div className="flex flex-col justify-center items-center space-y-10 md:py-20 md:pr-20 animate__animated animate__backInDown">
@@ -67,17 +72,17 @@ function CardSection() {
           >
             <div className="px-6 py-6 md:px-10 md:py-10">
               <p className="text-3xl md:text-4xl font-bold w-11/12 md:w-1/2">
-                250+ Job Opportunities
+               Large Employee Database
               </p>
               <p
                 className={`text-xl mt-2 ${
-                  isOrangeHovered ? 'line-clamp-none mt-6' : 'line-clamp-3'
+                  isOrangeHovered ? 'line-clamp-none -mb-20' : 'line-clamp-3'
                 }`}
               >
-                Explore 250+ job locations. From bustling cities to serene
-                landscapes, we offer diverse opportunities that align with your
-                ambitions. Expand your horizons and find the appropriate job
-                location with us.
+                Access our extensive employee database to find the right match for your 
+                open positions. We empower employers to discover highly qualified applicants who will 
+                contribute to their company's success. Streamline your hiring process and find your 
+                ideal candidate.
               </p>
             </div>
             <div
@@ -86,7 +91,7 @@ function CardSection() {
               }`}
             >
               <Image
-                src={Hands}
+                src={Database}
                 alt="hands"
                 layout="fill"
                 objectFit="contain"
@@ -97,7 +102,7 @@ function CardSection() {
             className={`bg-gray-600 w-full md:w-[90%] h-[${getGreyCardHeight()}] transition-height duration-500 relative`}
           >
             <p className="text-3xl md:text-4xl font-bold py-6 px-6 md:py-10 md:px-10">
-              High Wages
+            Fast Processing
             </p>
             <p className="px-6 text-xl md:px-10">
               Discover well-paying positions that align with your skills and
@@ -107,7 +112,7 @@ function CardSection() {
             </p>
             {!isOrangeHovered && (
               <div className="absolute w-[20rem] h-[25rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2">
-                <Image src={Sand} alt="" layout="fill" objectFit="contain" />
+                <Image src={Fast} alt="" layout="fill" objectFit="contain" />
               </div>
             )}
           </div>
@@ -119,7 +124,7 @@ function CardSection() {
             onMouseLeave={handleSecondHoverExit}
           >
             <div className="px-6 py-6 md:px-10 md:py-10">
-              <p className="text-3xl md:text-4xl font-bold">Easy Recruitment Process</p>
+              <p className="text-3xl md:text-4xl font-bold">Transparent Process</p>
               <p
                 className={`text-xl ${
                   isGraySecondHovered ? 'line-clamp-none mt-4' : 'line-clamp-3'
@@ -137,7 +142,7 @@ function CardSection() {
               }`}
             >
               <Image
-                src={Hands}
+                src={Process}
                 alt="hands"
                 layout="fill"
                 objectFit="contain"
@@ -148,7 +153,7 @@ function CardSection() {
             className={`bg-orange-600 w-full md:w-[90%] h-[${getOrangeCardHeight()}] transition-height duration-500 relative`}
           >
             <p className="text-3xl md:text-4xl font-bold py-6 px-6 md:py-10 md:px-10">
-              Low Labor
+            24X7 Support
             </p>
             <p className="px-6 text-xl md:px-10">
               Discover job opportunities effortlessly. Experience a personalized
@@ -157,7 +162,7 @@ function CardSection() {
             </p>
             {!isGraySecondHovered && (
               <div className="absolute w-[20rem] h-[25rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2">
-                <Image src={Sand} alt="" layout="fill" objectFit="contain" />
+                <Image src={Support} alt="" layout="fill" objectFit="contain" />
               </div>
             )}
           </div>
