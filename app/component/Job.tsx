@@ -3,7 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import { BsArrowRight } from 'react-icons/bs';
-
+import {BiSolidShoppingBags} from "react-icons/bi";
+import {FaTelegramPlane} from "react-icons/fa";
+import {GiWallet} from "react-icons/gi";
 const job = () => {
  const [step ,setStep] = useState(0);
  
@@ -17,7 +19,7 @@ const job = () => {
     },
     {
       title: "Truck Driver",
-      content: "Accelerate your truck driving career. Join our team of skilled proessionals, delivering goods nationwide with precision and reliability. Experience the open road and the satisfaction of keeping America moving. Apply now!"
+      content: "Accelerate your truck driving career. Join our team of skilled proessionals, delivering goods nationwide with precision and reliability. Experience the open road and the satisfaction of keeping America moving."
     },
     {
       title: "Fork lifter",
@@ -41,7 +43,7 @@ const job = () => {
     setDefault(false);
   };
 return (
-    <div className='container max-w-full  mx-auto relative bg-zinc-950 border-cyan-400 h-full' >
+    <div className='container max-w-full  mx-auto relative bg-zinc-950 sm:bg-zinc-950 border-cyan-400 h-full' >
       <div className='grid grid-cols-2 w-5/6 relative justify-between items-start border-orange-300 h-full'>
         <div className='flex flex-col gap-16 justify-between w-3/5 h-full border-red-700 my-10 mt-200'>
           <div className='flex gap-14 flex-col text-white'>
@@ -97,10 +99,25 @@ return (
               <div className='flex h-80 items-center justify-center mt-24'>
              <div className='h-[32rem] w-96 rounded-md bg-white  text-black mt-[10vh]'>
               {isDefault && <h1 className="text-orange-600  text-3xl items-center mx-3 mt-8">{title}</h1>}
-              {isDefault && <p className="mx-3 items-center mt-2">{content}</p>}
-              {!isDefault && <h1 className="text-orange-600 text-3xl items-center mx-4 mt-8">{title}</h1>}
+              {isDefault && <p className="mx-3 items-center mt-4">{content}</p>}
+              {!isDefault && <h1 className="text-orange-600 text-3xl items-center mx-4 mt-6">{title}</h1>}
              {!isDefault && <p className="mx-3"> {content}</p>}
-            {!isDefault && <button className="bg-orange-500  text-white items-center my-56 mx-8 h-16 w-80 rounded-full"> Apply now </button>}
+             {!isDefault &&
+              <div className="flex flex-col mt-10 ml-5 ">
+              <div className="flex items-center mb-4">
+              <div className="w-1/2"><BiSolidShoppingBags className="h-10 w-7" /></div>
+              <div className="w-1/2 -ml-28">50+ Job Openings</div>
+              </div>
+              <div className="flex items-center mb-4">
+              <div className="w-1/2"><FaTelegramPlane className="h-10 w-7"/></div>
+              <div className="w-1/2 -ml-28">20+ Locations</div>
+               </div>
+              <div className="flex items-center mb-4">
+              <div className="w-1/2"><GiWallet className="h-10 w-7"/></div>
+              <div className="w-1/2 -ml-28">Starting From $500</div>
+             </div>
+            </div>}
+          {!isDefault && <button className="bg-orange-500  text-white items-center my-10 mx-8 h-16 w-80 rounded-full"> Apply now </button>}
              </div>
         </div>
             </div>

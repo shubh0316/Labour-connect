@@ -15,7 +15,12 @@ const Application = () => {
             Unlock Your Staffing Success With Us
           </div>
           <div className="text-white mt-6 text-xl sm:text-2xl font-sans ml-4 sm:ml-0">
-            Careful planning makes us confident, developed with best practices so that the project can be maintained. We always test projects before they are shipped.
+           Boost your staffing success with our dynamic services. With us, you'll harness 
+           personalized solutions and expert support. Maximize your potential and achieve
+           extraordinary results. Join us today and revolutionize your staffing approach.
+           Confidence comes through careful planning and proven practices. Our testing ensures 
+           optimal performance through careful planning and proven practices. Our testing ensures 
+           optimal performance and seamless maintenance of projects before they are delivered.
           </div>
           <button className="flex items-center justify-center gap-4 text-xl sm:text-2xl w-56 h-12 mt-8 ml-4 sm:ml-0 rounded-full bg-orange-500 text-white hover:bg-orange-600 transform hover:scale-105">
             Explore Jobs <BsArrowRight size={32} />
