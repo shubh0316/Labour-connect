@@ -57,8 +57,7 @@ function Fotter() {
                 <a
                   href="https://www.loadlc.com"
                   target="_blank"
-                  rel="noopener"
-                  className="hover:underline"
+rel="noreferrer"                  className="hover:underline"
                 >
                   https://www.loadlc.com
                 </a>
