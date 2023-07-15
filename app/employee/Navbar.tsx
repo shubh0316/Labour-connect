@@ -11,8 +11,8 @@ const navlinks = [
   { title: "Features", destination: "#" },
   { title: "Resources", destination: "#" },
   { title: "Pricing", destination: "#" },
-  { title: "About", destination: "#" }, // Add additional link
-  { title: "Contact", destination: "#" }, // Add additional link
+  { title: "About", destination: "#" },
+  { title: "Contact", destination: "#" },
 ];
 
 function MobileNavExtended() {

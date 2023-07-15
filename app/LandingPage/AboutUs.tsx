@@ -6,8 +6,8 @@ const AboutUs = () => {
   return (
     <div className="flex flex-col sm:flex-row">
       <div className="flex items-center justify-center w-full sm:w-1/2">
-        <div className="w-96 h-96 mb-10 sm:mb-0 sm:ml-40 sm:mr-4 transform hover:scale-125">
-          <Image src={About} alt="" layout="responsive" width={400} height={400} />
+        <div className="w-96 h-96 mb-10  transform hover:scale-125 sm:mb-20 sm:py-20 sm:ml-40 sm:mr-4 ">
+          <Image src={About} alt=""  width={400} height={400} />
         </div>
       </div>
       <div className="w-full sm:w-1/2 text-black text-left text-lg sm:text-2xl font-sans">

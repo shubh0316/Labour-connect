@@ -30,7 +30,7 @@ const Application = () => {
         <div className="lg:w-1/2 flex flex-end">
           <div className="hidden lg:block">
             <Image
-              className="mt-40 ml-80 w-auto h-auto"
+              className="mt-40 ml-[17rem] w-auto h-auto"
               src={Macbook}
               alt=""
               width={900}
