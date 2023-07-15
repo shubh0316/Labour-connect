@@ -39,10 +39,10 @@ function ScrollSection() {
   }, []);
 
   return (
-    <section className="scroll-section-outer overflow-hidden h-3/6">
-       <div className="max-w-full container text-black my-40">
+    <section className="scroll-section-outer overflow-hidden h-1/6">
+       <div className="max-w-full h-3 container text-black my-40">
          
-          <div className="container gap-10 flex-col mx-32 mt-52 xl:w-2/3">
+          <div className="container flex-col mx-32 mt-10 xl:w-2/3">
       <p className="text-orange-500 text-2xl font-bold">How it Works</p>
       <p className="font-semibold text-base sm:text-5xl md:text-6xl mt-4">
         Get Hired In 3 Simple Steps
@@ -52,12 +52,12 @@ function ScrollSection() {
       </div>
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner h-screen md:h-[100vh] w-[300vw] flex flex-row relative overflow-auto">
-          <div className="scroll-section h-full w-screen md:w-full flex justify-center items-center">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="scroll-section h-60 mt-52 w-screen md:w-full flex justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 ">
               <div className="flex mx-8 md:mx-40 mt-20 md:mt-40">
                 <BsFill1CircleFill className="text-orange-500 p-1 h-20 w-20 md:text-4xl -my-5" />
                 <h1 className="text-2xl md:text-3xl font-bold mb-2 text-orange-500 mx-3">
-                  Create your profile
+                  Create Your Profile
                   <div className="w-45 border-black overflow-x-clip">
                     <p className="text-black font-medium text-base mt-2 leading-loose"> 
                       Unlock job opportunities by creating a profile. Showcase your qualifications, experience, 
@@ -71,12 +71,12 @@ function ScrollSection() {
               </div>
             </div>
           </div>
-          <div className="scroll-section h-full w-screen md:w-full flex justify-center items-center">
+          <div className="scroll-section h-60 mt-52 w-screen md:w-full flex justify-center items-center">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="flex mx-8 md:mx-40 mt-20 md:mt-40">
                 <BsFill2CircleFill className="text-orange-500 p-1 h-20 w-20 md:text-4xl -my-5" />
                 <h1 className="text-2xl md:text-3xl font-bold mb-2 text-orange-500 mx-3">
-                  Apply for Jobs
+                  Apply For Jobs
                   <p className="text-black font-medium text-base mt-2 leading-loose"> 
                     Discover and apply for your ideal job. Our platform connects with opportunities that 
                     perfectly match your qualifications and aspirations. Take the first step towards your 
@@ -88,12 +88,12 @@ function ScrollSection() {
               </div>
             </div>
           </div>
-          <div className="scroll-section h-full w-screen md:w-full flex justify-center items-center">
+          <div className="scroll-section h-60 mt-52 w-screen md:w-full flex justify-center items-center">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="flex mx-8 md:mx-40 mt-20 md:mt-40">
                 <BsFill3CircleFill className="text-orange-500 p-1 h-20 w-20 md:h-24 md:w-24 md:text-4xl -my-7" />
                 <h1 className="text-2xl md:text-3xl font-bold mb-2 text-orange-500 mx-3">
-                  Complete the interview process and get hired
+                  Complete The Interview Process And Get Hired
                   <p className="text-black font-medium text-base mt-2 leading-loose"> 
                     Seize the opportunity to showcase your skills, abilities, and achievements during 
                     interviews with renowned companies. Start a rewarding career journey by 

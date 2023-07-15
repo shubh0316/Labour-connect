@@ -177,7 +177,7 @@ const Job = () => {
       content: "Lead a high-performing warehouse team to success. Apply now for the warehouse supervisor role and make a positive impact through your strong leadership, organizational skills, and commitment to excellence. Apply now!"
     },
   ];
-
+  const[animation, setAnimation] = useState("animate__backInUp");
   const [title, setTitle] = useState(stepDetails[0].title);
   const [content, setContent] = useState(stepDetails[0].content);
 
@@ -187,9 +187,11 @@ const Job = () => {
       newState[index] = true;
       return newState;
     });
+    setAnimation("animate__backOutUp");
     setContent(stepDetails[index].content);
     setTitle(stepDetails[index].title);
     setDefault(false);
+    setAnimation("animate__backInUp");
   };
 
   return (
@@ -236,11 +238,12 @@ const Job = () => {
           </div>
         </div>
         <div className='flex h-80 items-center justify-center mt-24'>
-          <div className='h-[35rem] w-96 rounded-md bg-white text-black mt-[13vh] '>
-            <h1 className={`text-orange-600 text-3xl items-center mx-4 mt-6 ${isClick.some(Boolean) && 'animate__animated animate__backInUp'}`}>{title}</h1>
-            <p className={`mx-3 mt-3 ${isClick.some(Boolean) && 'animate__animated animate__backInUp'}`}>{content}</p>
+          <div className="h-[35rem] w-96 rounded-md bg-white text-black mt-[13vh] " >
+            <div className= {`${isClick.some(Boolean) && `animate__animated animated__backOutUp animated__backInUp ${animation}`}`}>
+            <h1 className={`text-orange-600 text-3xl items-center mx-4 mt-6 `}>{title}</h1>
+            <p className={`mx-3 mt-3`}>{content}</p>
             {!isDefault &&
-              <div className={`flex flex-col mt-20 ml-5 ${isClick.some(Boolean) && 'animate__animated animate__backInUp'}`}>
+              <div className={`flex flex-col mt-20 ml-5 `}>
                 <div className="flex items-center mb-4">
                   <div className="w-1/2"><BiSolidShoppingBags className="h-10 w-7" /></div>
                   <div className="w-1/2 -ml-28">50+ Job Openings</div>
@@ -256,8 +259,9 @@ const Job = () => {
               </div>
             }
             {!isDefault &&
-              <button className={`bg-orange-500 text-white items-center ${isClick.some(Boolean) ? 'my-10' : 'mt-12'} mx-8 h-16 w-80 rounded-full animate__animated animate__backInUp`}> Apply now </button>
+              <button className={`bg-orange-500 text-white items-center ${isClick.some(Boolean) ? 'my-10' : 'mt-12'} mx-8 h-16 w-80 rounded-full`}> Apply now </button>
             }
+           </div>
           </div>
         </div>
       </div>
