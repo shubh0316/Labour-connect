@@ -49,15 +49,16 @@ function ScrollSection() {
            
             <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className=" flex mx-40 mt-40 ">
-                  <BsFill1CircleFill className="text-orange-500 p-1 h-20 w-20 text-4xl -my-5" />
+                  <BsFill1CircleFill className="text-orange-500 p-1 h-24 w-24 text-4xl -my-7" />
                   <h1 className="text-3xl font-bold mb-2 text-orange-500  mx-3">
-                     Create your profile
+                     Create Your Profile
                      <div className="w-45 border-black overflow-x-clip">
-                     <p className="text-black font-medium text-base mt-2"> 
-                     Unlock job opportunites by creating profile.Showcase your qualifications,experience,
-                     and interests to stand out in the job market. Start applying today and let your profile 
-                     speak for itself
-                    </p></div>
+                     <p className="text-black font-medium text-base mt-2 leading-loose"> 
+                     Build your job-seeking profile and showcase your skills and experience. Unleash your
+                     potential and open doors to exciting opportunites. Get noticed by employers and 
+                     embark on your success journey. Start today
+
+                  </p></div>
               </h1>
             </div>
             <div className="box-border h-96 w-96 bg-black mx-60 mt-20">
@@ -71,13 +72,13 @@ function ScrollSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 ">
             <div className=" flex mx-40 mt-40">
-                  <BsFill2CircleFill className="text-orange-500 p-1 h-20 w-20 text-4xl -my-5" />
+                  <BsFill2CircleFill className="text-orange-500 p-1 h-28 w-28 text-4xl -my-9" />
                   <h1 className="text-3xl font-bold mb-2 text-orange-500  mx-3">
-                    Apply for Jobs
-                     <p className="text-black font-medium text-base mt-2"> 
-                     Discover and apply for your ideal job. Our platform connects with opportunites that 
-                     perfectly mtch your qualification and aspirants. Take the first step towards your 
-                     deam career today.
+                   Create Your Job Posts
+                     <p className="text-black font-medium text-base mt-2 leading-loose"> 
+                    Kickstart your hiring process with a compelling company profile. Highlight your mission,
+                    values, and strategic goals to attract top talent who align with your vision. Find the most
+                    suitable candidate who propels your success forward. Get started now!
                     </p>
               </h1>
             </div>
@@ -93,11 +94,11 @@ function ScrollSection() {
             <div className=" flex mx-40 mt-40">
                   <BsFill3CircleFill className="text-orange-500 p-1 h-24 w-24 text-4xl -my-7" />
                   <h1 className="text-3xl font-bold mb-2 text-orange-500  mx-3">
-                    Complete the interview process and get hired
-                     <p className="text-black font-medium text-base mt-2"> 
-                     Seize the opportunity to showcase your skills,abilities, and achievements during 
-                      interviews with renowned companies. Start a rewarding career joruney by 
-                      demonstrating your true value and securing a successful job.
+                    Wait For Us To Select The Best Candidates For You To Hire
+                     <p className="text-black font-medium text-base mt-2 leading-loose"> 
+                     Discover the top talent through our rigorous candidate review process. We carefully
+                     screen profiles to present you with the most qualifies candidates, accelerating your
+                     hiring success and propelling your business forward.
                     </p>
               </h1>
             </div>
