@@ -156,7 +156,7 @@ import 'animate.css';
 
 const Job = () => {
   const [step, setStep] = useState(0);
-  const [isClick, setClick] = useState(Array(4).fill(false));
+  const [isClick, setClick] = useState([true, false, false, false]);
   const [isDefault, setDefault] = useState(true);
   const[isVisible,setVisible] = useState(true);
   const stepDetails = [
@@ -174,12 +174,14 @@ const Job = () => {
     },
     {
       title: "Warehouse Supervisor",
-      content: "Lead a high-performing warehouse team to success. Apply now for the warehouse supervisor role and make a positive impact through your strong leadership, organizational skills, and commitment to excellence. Apply now!"
+      content: "Lead a high-performing warehouse team to success. Apply now for the warehouse supervisor role and make a positive impact through your strong leadership, organizational skills, and commitment to excellence. "
     },
   ];
   const[animation, setAnimation] = useState("animate__backInUp");
   const [title, setTitle] = useState(stepDetails[0].title);
   const [content, setContent] = useState(stepDetails[0].content);
+  
+
 
   const handleClick = (index:number) => {
     setClick(prevState => {
@@ -187,11 +189,11 @@ const Job = () => {
       newState[index] = true;
       return newState;
     });
-    setAnimation("animate__backOutUp");
+    
     setContent(stepDetails[index].content);
     setTitle(stepDetails[index].title);
     setDefault(false);
-    setAnimation("animate__backInUp");
+    setVisible(!isVisible);  
   };
 
   return (
@@ -205,25 +207,25 @@ const Job = () => {
               <span className='block'>Waiting For You.</span>
             </p>
             <div className='grid grid-cols-2 gap-4 py-4 gay-y-20'>
-              <div className={`flex items-center border-b-2 border-gray-500 col-span-2 rounded-md hover:bg-slate-200 transition-colors duration-300 ${isClick[0] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(0)}>
+              <div className={`flex items-center border-b-2 border-gray-500 col-span-2 ${isClick[0] && `bg-slate-200`} rounded-md hover:bg-slate-200 transition-colors duration-300 ${isClick[0] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(0)}>
                 <button className={`flex-grow shadow-xl text-gray-500 ${isClick[0] && 'animate__animated animate__backInUp'}`}>Truck Driver</button>
                 <div className='flex justify-end'>
                   <BsArrowRight className={`text-gray-500 ${isClick[0] && 'animate__animated animate__backInUp'}`} />
                 </div>
               </div>
-              <div className={`flex items-center border-b-2 border-gray-500 col-span-2 rounded-md hover:bg-slate-200 transition-colors duration-300 ${isClick[1] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(1)}>
+              <div className={`flex items-center border-b-2 border-gray-500 col-span-2  ${isClick[1] && `bg-slate-200`} rounded-md hover:bg-slate-200 transition-colors duration-300 ${isClick[1] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(1)}>
                 <button className={`flex-grow text-gray-500 ${isClick[1] && 'animate__animated animate__backInUp'}`}>Fork Lifter</button>
                 <div className='flex justify-end'>
                   <BsArrowRight className={`text-gray-500 ${isClick[1] && 'animate__animated animate__backInUp'}`} />
                 </div>
               </div>
-              <div className={`flex items-center border-b-2 border-gray-500 col-span-2 rounded-md hover:bg-slate-200 transition-colors duration-300 ${isClick[2] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(2)}>
+              <div className={`flex items-center border-b-2 border-gray-500 col-span-2  ${isClick[2] && `bg-slate-200`} rounded-md hover:bg-slate-200 transition-colors duration-300 ${isClick[2] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(2)}>
                 <button className={`flex-grow text-gray-500 ${isClick[2] && 'animate__animated animate__backInUp'}`}>Pickup Man</button>
                 <div className='flex justify-end'>
                   <BsArrowRight className={`text-gray-500 ${isClick[2] && 'animate__animated animate__backInUp'}`} />
                 </div>
               </div>
-              <div className={`flex items-center border-b-2 border-gray-500 col-span-2 rounded-md hover:bg-slate-200 hover:animate-bounce-up transition-colors duration-300 ${isClick[3] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(3)}>
+              <div className={`flex items-center border-b-2 border-gray-500 col-span-2 ${isClick[3] && `bg-slate-200`} rounded-md hover:bg-slate-200 hover:animate-bounce-up transition-colors duration-300 ${isClick[3] && 'animate__animated animate__backInUp'}`} onClick={() => handleClick(3)}>
                 <button className={`flex-grow text-gray-500 ${isClick[3] && 'animate__animated animate__backInUp'}`}>Warehouse Supervisor</button>
                 <div className='flex justify-end'>
                   <BsArrowRight className={`text-gray-500 ${isClick[3] && 'animate__animated animate__backInUp'}`} />
@@ -238,11 +240,11 @@ const Job = () => {
           </div>
         </div>
         <div className='flex h-80 items-center justify-center mt-24'>
-          <div className="h-[35rem] w-96 rounded-md bg-white text-black mt-[13vh] " >
-            <div className= {`${isClick.some(Boolean) && `animate__animated animated__backOutUp animated__backInUp ${animation}`}`}>
+          { isVisible && <div className="h-[35rem] w-96 rounded-md bg-white text-black mt-[13vh] " >
+            <div className= {`animate__animated animate__backUpOut`}>
             <h1 className={`text-orange-600 text-3xl items-center mx-4 mt-6 `}>{title}</h1>
             <p className={`mx-3 mt-3`}>{content}</p>
-            {!isDefault &&
+            {
               <div className={`flex flex-col mt-20 ml-5 `}>
                 <div className="flex items-center mb-4">
                   <div className="w-1/2"><BiSolidShoppingBags className="h-10 w-7" /></div>
@@ -258,12 +260,37 @@ const Job = () => {
                 </div>
               </div>
             }
-            {!isDefault &&
+            {
               <button className={`bg-orange-500 text-white items-center ${isClick.some(Boolean) ? 'my-10' : 'mt-12'} mx-8 h-16 w-80 rounded-full`}> Apply now </button>
             }
            </div>
-          </div>
-        </div>
+          </div> }
+        {!isVisible &&  <div className="h-[35rem] w-96 rounded-md bg-white text-black mt-[13vh] " >
+            <div className= {` animate__animate animate__backInUp`}>
+            <h1 className={`text-orange-600 text-3xl items-center mx-4 mt-6 `}>{title}</h1>
+            <p className={`mx-3 mt-3`}>{content}</p>
+            {
+              <div className={`flex flex-col mt-20 ml-5 `}>
+                <div className="flex items-center mb-4">
+                  <div className="w-1/2"><BiSolidShoppingBags className="h-10 w-7" /></div>
+                  <div className="w-1/2 -ml-28">50+ Job Openings</div>
+                </div>
+                <div className="flex items-center mb-4">
+                  <div className="w-1/2"><FaTelegramPlane className="h-10 w-7" /></div>
+                  <div className="w-1/2 -ml-28">20+ Locations</div>
+                </div>
+                <div className="flex items-center mb-4">
+                  <div className="w-1/2"><GiWallet className="h-10 w-7" /></div>
+                  <div className="w-1/2 -ml-28">Starting From $500</div>
+                </div>
+              </div>
+            }
+            {
+              <button className={`bg-orange-500 text-white items-center ${isClick.some(Boolean) ? 'my-10' : 'mt-12'} mx-8 h-16 w-80 rounded-full`}> Apply now </button>
+            }
+           </div>
+          </div> }
+        </div> 
       </div>
     </div>
   );

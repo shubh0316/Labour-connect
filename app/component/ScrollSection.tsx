@@ -42,9 +42,9 @@ function ScrollSection() {
     <section className="scroll-section-outer overflow-hidden h-1/6">
        <div className="max-w-full h-3 container text-black my-40">
          
-          <div className="container flex-col mx-32 mt-10 xl:w-2/3">
+          <div className="container flex-col mx-32  xl:w-2/3">
       <p className="text-orange-500 text-2xl font-bold">How it Works</p>
-      <p className="font-semibold text-base sm:text-5xl md:text-6xl mt-4">
+      <p className="font-semibold text-base sm:text-5xl md:text-6xl mt-5">
         Get Hired In 3 Simple Steps
       </p>
     </div>
