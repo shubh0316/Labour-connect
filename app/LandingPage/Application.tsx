@@ -15,7 +15,7 @@ const Application = () => {
             Unlock Your Staffing Success With Us
           </div>
           <div className="text-white mt-6 text-sm sm:text-2xl font-sans ml-4 sm:ml-0">
-           Boost your staffing success with our dynamic services. With us, you'll harness 
+           Boost your staffing success with our dynamic services. With us, you&apos;ll harness 
            personalized solutions and expert support. Maximize your potential and achieve
            extraordinary results. Join us today and revolutionize your staffing approach.
            Confidence comes through careful planning and proven practices. Our testing ensures 

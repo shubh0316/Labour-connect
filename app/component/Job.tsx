@@ -146,13 +146,13 @@
 //   export default job;
 
 
-
 import React, { useState } from "react";
 import { BsArrowRight } from 'react-icons/bs';
 import { BiSolidShoppingBags } from "react-icons/bi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { GiWallet } from "react-icons/gi";
 import 'animate.css';
+
 
 const Job = () => {
   const [step, setStep] = useState(0);

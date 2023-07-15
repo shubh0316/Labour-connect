@@ -41,7 +41,7 @@ function CardSection() {
               <span className="text-3xl md:text-4xl"> Success With Us</span>
             </h2>
             <p className="text-xl text-zinc-900  px-6 py-4 md:px-10 md:py-5 leading-loose animate__animated animate__bounceInLeft">
-              Boost your staffing success with our dynamic services. With us, you'll harness 
+              Boost your staffing success with our dynamic services. With us, you&apos;ll harness 
               personalized solutions and expert support. Maximize your potential and achieve
               extraordinary results. Join us today and revolutionize your staffing approach.
             </p>
