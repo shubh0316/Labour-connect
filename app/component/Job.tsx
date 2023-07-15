@@ -158,7 +158,7 @@ const Job = () => {
   const [step, setStep] = useState(0);
   const [isClick, setClick] = useState(Array(4).fill(false));
   const [isDefault, setDefault] = useState(true);
-
+  const[isVisible,setVisible] = useState(true);
   const stepDetails = [
     {
       title: "Truck Driver",
