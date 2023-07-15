@@ -33,7 +33,7 @@ function ScrollSection() {
       }
     );
     return () => {
-      {/* A return function for killing the animation on component unmount */ }
+
       pin.kill();
     };
   }, []);
@@ -41,10 +41,14 @@ function ScrollSection() {
   return (
     <section className="scroll-section-outer overflow-hidden h-3/6">
        <div className="max-w-full container text-black my-40">
+         
           <div className="container gap-10 flex-col mx-32 mt-52 xl:w-2/3">
-            <p className="text-orange-500 text-2xl font-bold">How it Works</p>
-            <p className="text-6xl font-semibold">Get Hired In 3 Simple Steps</p>
-          </div>
+      <p className="text-orange-500 text-2xl font-bold">How it Works</p>
+      <p className="font-semibold text-base sm:text-5xl md:text-6xl mt-4">
+        Get Hired In 3 Simple Steps
+      </p>
+    </div>
+
       </div>
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner h-screen md:h-[100vh] w-[300vw] flex flex-row relative overflow-auto">
@@ -108,3 +112,5 @@ function ScrollSection() {
 }
 
 export default ScrollSection;
+
+
