@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className="bg-footer">
       <Container>
-        <div className="py-20  grid grid-cols-1 gap-4 justify-between rounded-2xl md:grid-cols-3">
+        <div className="py-40  grid grid-cols-1 gap-4 justify-between rounded-2xl md:grid-cols-3">
           <div>
             <Image src={navLogo1} quality={100} height={70} alt="menu" />
           </div>
