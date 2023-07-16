@@ -8,8 +8,9 @@ import Marquee from './Marquee';
 import Container from './Container';
 import { BsArrowRight } from 'react-icons/bs';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import 'animate.css';
-import { Navigate } from 'react-router-dom';
+
 
 
 const getWindowSize = () => {
@@ -42,9 +43,9 @@ const WelcomePage = () => {
   }, []);
 
   const isLargeScreen = windowSize.width > 768;
-  const handleClick = () => {
-    Navigate({to: '/employee'});
-  }
+  const router = useRouter();
+
+
   return (
     <div className="relative mt-20 w-full min-h-screen">
       <div
@@ -65,28 +66,35 @@ const WelcomePage = () => {
         <div className="text-lg sm:text-xl font-light mt-4 sm:tracking-wide sm:mt-10 sm:leading-loose">
           Unleash talent potential with our strategic staffing solutions, ensuring access to the right candidates for optimal success.
         </div>
+   
         <div className="flex flex-col sm:flex-row justify-center mt-10 sm:mt-10 gap-4">
           <div className="flex-shrink-0">
-            <motion.div animate={{ x: [450, 0] }}>
-              <Link href="/component">
-                <span className="flex items-center justify-between bg-lc-orange border-2 border-white hover:bg-orange-400 text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-8 rounded-full max-w-lg transition ease-in-out  hover:scale-x-110 hover:animate-pulse">
+          <Link href="/component">
+            <motion.div animate={{ x: [450, 0] }} transition={{ loop: Infinity, duration: 2 }}>
+              
+                <div className="flex items-center justify-between bg-lc-orange border-2 border-white hover:bg-orange-400 text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-8 rounded-full max-w-lg transition ease-in-out  hover:scale-x-110 hover:animate-pulse">
                 
-                  <button className="flex text-base sm:text-lg">For Recruiters</button>
+                  <span className="flex text-base sm:text-lg">For Recruiters</span>
                   <BsArrowRight className="w-10 " />
                   
-                </span>
-              </Link>
+                </div>
+              
             </motion.div>
+            </Link>
           </div>
+          
           <div className="flex-shrink-0">
-            <motion.div animate={{ x: [450, 0] }}>
-              <Link id="qq" href="/employee" onClick={() =>{handleClick}}>
+          <Link id="qq" href="/employee">
+          <motion.div animate={{ x: [450, 0] }} transition={{ loop: Infinity, duration: 2 }}>
+
+            
                 <span className="flex items-center justify-between bg-white-500 border-2 border-lc-orange  text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-7 rounded-full max-w-lg">
                   <span className="flex text-lc-orange text-base sm:text-lg">For Job Seekers</span>
                   <BsArrowRight className="w-10 text-lc-orange" />
                 </span>
-              </Link>
+            
             </motion.div>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-between z-10 py-20">
@@ -103,6 +111,7 @@ const WelcomePage = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
