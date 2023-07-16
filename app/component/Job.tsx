@@ -12,7 +12,7 @@ import { BiSolidShoppingBags } from "react-icons/bi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { GiWallet } from "react-icons/gi";
 import 'animate.css';
-
+import "./style.css";
 
 const Job = () => {
   const [step, setStep] = useState(0);
@@ -43,7 +43,11 @@ const Job = () => {
   
   const scrollToContent = (id: string) => {
     const content = document.getElementById(id);
+    content?.classList.remove("overflow-hidden");
+    content?.classList.add("overflow-x-scroll");
     content?.scrollIntoView({behavior: "smooth"});
+    content?.classList.remove("overflow-x-scroll");
+    content?.classList.add("overflow-hidden");
   };
 
   const handleClick = (index:number) => {
@@ -146,7 +150,7 @@ const Job = () => {
           </div>
         </div>
         <div className='flex h-80 items-center justify-center mt-24'>
-          <div className=" h-[35rem]  w-96 rounded-md bg-white text-black mt-[12vh] overflow-x-scroll " id='container'>
+          <div className=" h-[35rem]  w-96 rounded-md bg-white text-black mt-[12vh] overflow-hidden  " id='container'>
             <div id = "job1" className= {`animate__animated animate__backUpOut`}>
              <div className="sm:h-[0.2] h-[1.5rem]"></div>
             <h1 className={`text-orange-600 sm:text-base lg:text-2xl xl:text-3xl items-center mx-4 `}>{stepDetails[0].title}</h1>

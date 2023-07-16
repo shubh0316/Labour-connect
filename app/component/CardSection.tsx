@@ -48,7 +48,7 @@ function CardSection() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center md:mb-[20rem] md:flex-row">
+      <div className="flex flex-col items-center justify-center md:mb-[1rem] md:flex-row">
         <div className="flex flex-col md:w-2/3 mb-8">
           <span className="text-lg py-4 md:mt-20 w-full text-lc-orange whitespace-nowrap">
             Why Choose Our Dynamic Service
