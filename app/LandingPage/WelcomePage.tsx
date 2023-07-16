@@ -9,8 +9,12 @@ import Container from './Container';
 import { BsArrowRight } from 'react-icons/bs';
 import Link from 'next/link';
 import 'animate.css';
+import { Navigate } from 'react-router-dom';
+
 
 const getWindowSize = () => {
+  
+    
   if (typeof window !== 'undefined') {
     return {
       width: window.innerWidth,
@@ -38,7 +42,9 @@ const WelcomePage = () => {
   }, []);
 
   const isLargeScreen = windowSize.width > 768;
-
+  const handleClick = () => {
+    Navigate({to: '/employee'});
+  }
   return (
     <div className="relative mt-20 w-full min-h-screen">
       <div
@@ -74,8 +80,8 @@ const WelcomePage = () => {
           </div>
           <div className="flex-shrink-0">
             <motion.div animate={{ x: [450, 0] }}>
-              <Link id="qq" href="/employee">
-                <span className="flex items-center justify-between bg-white-500 border-2 border-lc-orange  text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-8 rounded-full max-w-lg">
+              <Link id="qq" href="/employee" onClick={() =>{handleClick}}>
+                <span className="flex items-center justify-between bg-white-500 border-2 border-lc-orange  text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-7 rounded-full max-w-lg">
                   <span className="flex text-lc-orange text-base sm:text-lg">For Job Seekers</span>
                   <BsArrowRight className="w-10 text-lc-orange" />
                 </span>
