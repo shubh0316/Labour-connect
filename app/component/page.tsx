@@ -12,8 +12,8 @@ const dashboard = () => {
     <Navbar />
     <Hero />
      <CardSection /> 
-     <Service />
-     
+
+    
      <ScrollSection />
 
   
