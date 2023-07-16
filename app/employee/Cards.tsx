@@ -282,9 +282,9 @@ function CardSection() {
             <span className="text-3xl md:text-2xl">The Best Employee</span>
           </h2>
           <p className="text-lg w-4/5 text-zinc-900 md:text-xl md:py-5 font-sans leading-loose tracking-wider animate__animated animate__bounceInLeft">
-          Unlock your workforce's potential with our expert assistance. Our personalized 
+          Unlock your workforce&apos;s potential with our expert assistance. Our personalized 
           approach connects you with exceptional talent that perfectly aligns with your 
-          organization's needs. Discover the best employees who will drive your success forward. 
+          organization&apos;s needs. Discover the best employees who will drive your success forward. 
           Partner with us today!
           </p>
         </div>
@@ -310,7 +310,7 @@ function CardSection() {
               >
      Access our extensive employee database to find the right match for your open 
      positions. We empower employers to discover highly qualified applicants who will 
-     contribute to their company's success. Streamline your hiring process and find your 
+     contribute to their company&apos;s success. Streamline your hiring process and find your 
      ideal candidate.
               </p>
             </div>
