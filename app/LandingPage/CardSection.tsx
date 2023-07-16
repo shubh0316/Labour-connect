@@ -58,7 +58,7 @@ function CardSection() {
             <br className="md:hidden" />
             <span className="text-3xl md:text-2xl"> Success With Us</span>
           </h2>
-          <p className="text-lg w-4/5 text-zinc-900 md:text-xl md:py-5 leading-loose tracking-wider animate__animated animate__bounceInLeft">
+          <p className="text-lg w-4/5 text-zinc-900 md:text-xl md:py-5 font-sans leading-loose tracking-wider animate__animated animate__bounceInLeft">
             Boost your staffing success with our dynamic services. With us, you&apos;ll harness personalized solutions
             and expert support. Maximize your potential and achieve extraordinary results. Join us today and revolutionize
             your staffing approach.

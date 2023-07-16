@@ -36,8 +36,8 @@ function ScrollSection() {
   }, []);
 
   return (
-    <section className="scroll-section-outer overflow-hidden h-1/6">
-       <div className="max-w-full h-3 container text-black my-12">
+    <section className="scroll-section-outer overflow-hidden h-1/3">
+       <div className="max-w-full h-3 container text-black my-10">
          
           <div className="container flex-col mx-32  xl:w-2/3">
       <p className="text-orange-500 text-2xl font-bold">How it Works</p>

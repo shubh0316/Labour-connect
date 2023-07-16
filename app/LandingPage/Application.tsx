@@ -10,21 +10,23 @@ import { motion } from "framer-motion";
 function ApplicationPage() {
   return (
     <Container>
-      <div className=" bg-black  rounded-2xl px-10 items-center flex flex-col-reverse   md:flex-row justify-evenly py-12">
+      <div className=" bg-black  rounded-2xl px-10 items-center flex flex-col-reverse   md:flex-row justify-evenly py-12 mb-40">
         <div className="flex flex-col gap-4  mt-4">
           <div className="text-fms-orange text-left text-xs mt-2 text-medium lg:text-sm">
           
           </div>
           <div className="tracking-wider gap-1 mt-4 leading-tight">
             <div className="font-medium text-white    md:text-4xl lg:text-4xl text-3xl">
-              Unlock Your Fleet
+            Unlock your Staffing 
+
             </div>
             <div className="font-medium text-white  md:text-4xl lg:text-4xl text-3xl">
-              Safety With us
+            Success with Us
             </div>
           </div>
           <div className="text-white leading-tight text-justify  sm:text-sm text-md  md:text-lg">
-          Supercharge your fleet operations with LC&apos;s Fleet Management System (FMS). Streamline driver and vehicle management, optimize routes, and maximize productivity. Start now to unlock the power of efficient fleet management.
+          Confidence comes through careful planning and proven practices. Our testing ensures optimal performance and seamless maintenance of projects before they are delivered.
+
           </div>
           <div>
             <button>
