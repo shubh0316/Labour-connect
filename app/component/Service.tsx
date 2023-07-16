@@ -17,7 +17,7 @@ export default function Service() {
               <h1 className="text-4xl text-opacity-20 font-bold py-10">
                 Temporary details
               </h1>
-              <h2 className="text-xl text-zinc-900 px-6 sm:px-20">
+              <h2 className="text-xl  text-zinc-900 px-6 sm:px-20">
                 For those needs ranging from same-day emergency replacements to
                 long-term contingent staff, this solution is our most flexible
                 and the cornerstone of our business.
