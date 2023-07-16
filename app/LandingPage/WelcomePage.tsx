@@ -63,16 +63,18 @@ const WelcomePage = () => {
           <div className="flex-shrink-0">
             <motion.div animate={{ x: [450, 0] }}>
               <Link href="/component">
-                <span className="flex items-center justify-between bg-lc-orange border-2 border-white hover:bg-orange-400 text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-8 rounded-full max-w-lg transition ease-in-out duration-75 hover:scale-x-110 hover:animate-pulse">
-                  <span className="flex text-base sm:text-lg">For Recruiters</span>
+                <span className="flex items-center justify-between bg-lc-orange border-2 border-white hover:bg-orange-400 text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-8 rounded-full max-w-lg transition ease-in-out  hover:scale-x-110 hover:animate-pulse">
+                
+                  <button className="flex text-base sm:text-lg">For Recruiters</button>
                   <BsArrowRight className="w-10 " />
+                  
                 </span>
               </Link>
             </motion.div>
           </div>
           <div className="flex-shrink-0">
             <motion.div animate={{ x: [450, 0] }}>
-              <Link href="/employee">
+              <Link id="qq" href="/employee">
                 <span className="flex items-center justify-between bg-white-500 border-2 border-lc-orange  text-white font-extralight text-lg sm:text-xl mt-5 py-2 sm:py-3 px-3 sm:px-8 rounded-full max-w-lg">
                   <span className="flex text-lc-orange text-base sm:text-lg">For Job Seekers</span>
                   <BsArrowRight className="w-10 text-lc-orange" />

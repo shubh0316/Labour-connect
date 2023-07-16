@@ -2,10 +2,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Container from "./Container";
-import Hands from "../Resources/wepik-export-20230707094010tWv1 1 (1).png";
+import Hammer from "../Resources/Hammer.png";
 import Girl from "../Resources/33417740_7946688 1.png";
-import Bag from "../Resources/8640018 1.png";
-import Sand from "../Resources/13677899_5143070 1.png";
+import Sands from "../Resources/sands.png";
+import Wages from "../Resources/Wages.png";
+import location from "../Resources/location.png";
 import Image from "next/image";
 
 function CardSection() {
@@ -48,24 +49,22 @@ function CardSection() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center md:mb-[1rem] md:flex-row">
-        <div className="flex flex-col md:w-2/3 mb-8">
-          <span className="text-lg py-4 md:mt-20 w-full text-lc-orange whitespace-nowrap">
-            Why Choose Our Dynamic Service
+      <div className="flex flex-col items-center justify-center  md:flex-row">
+        <div className="flex flex-col md:w-2/3 md:mt-[-40rem]">
+          <span className="text-lg py-4 md:mt-40 w-full font-semibold text-lc-orange whitespace-nowrap">
+            Why Choose Us
           </span>
-          <h2 className="text-5xl font-bold text-zinc-900 whitespace-nowrap animate__animated animate__rubberBand">
-            <span className="text-xl md:text-2xl">Unlock Your Staffing</span>
+          <h2 className="text-5xl font-semibold leading-loose tracking-wider text-zinc-900 whitespace-nowrap animate__animated animate__rubberBand">
+            <span className="text-xl md:text-2xl">We Will Help You To</span>
             <br className="md:hidden" />
-            <span className="text-3xl md:text-2xl"> Success With Us</span>
+            <span className="text-xl md:text-2xl md:w-1/3"> Get Your Dream Job</span>
           </h2>
-          <p className="text-lg w-4/5 text-zinc-900 md:text-xl md:py-5 leading-loose tracking-wider animate__animated animate__bounceInLeft">
-            Boost your staffing success with our dynamic services. With us, you&apos;ll harness personalized solutions
-            and expert support. Maximize your potential and achieve extraordinary results. Join us today and revolutionize
-            your staffing approach.
+          <p className="text-lg w-4/5 text-zinc-900 md:text-xl md:py-5 font-sans leading-loose tracking-wider animate__animated animate__bounceInLeft">
+             Empower your dreams with us. Our expert guidance and personalized approach will guide you toward&apos;s your dream job. Let&apos;s make your career aspirations a reality.
           </p>
         </div>
 
-        <div className="flex flex-col ml-0 md:ml-[-8rem]">
+        <div className="flex flex-col  ml-[-5rem] md:mt-[-8rem] md:ml-[-8rem]">
           <motion.div
             className={`bg-lc-orange w-full md:w-[140%] md:rounded-2xl h-[${isOrangeHovered ? '24rem' : '30rem'}] ${
               isOrangeHovered ? 'translate-y-2' : ''
@@ -78,14 +77,15 @@ function CardSection() {
             variants={containerVariants}
           >
             <div className="px-6 py-6 md:px-10 md:py-10">
-              <p className="text-4xl md:text-6xl font-bold w-11/12 md:w-1/2">
-                Expertise In The Industry
+              <p className="text-4xl md:text-6xl font-semibold leading-loose tracking-wider w-11/12 md:w-1/2">
+                Easy Recruitment Process
               </p>
               <p
                 className={`text-3xl mt-2 ${isOrangeHovered ? 'line-clamp-none mt-6' : 'line-clamp-3'}`}
               >
-                Discover a hub of expertise in the industry, where employers find exceptional talent and employees
-                uncover their dream opportunities. Join us and unlock the most ideal match for extraordinary success.
+                Streamline and enhance recruitment with our simplified approach. Leverage our 
+                expertise and cutting-edge technologies to identify highly qualified candidates, 
+                expediting the process for employers and job seekers alike
               </p>
             </div>
             <motion.div
@@ -98,30 +98,31 @@ function CardSection() {
               transition={{ duration: imageFadeDuration }}
             >
               <Image
-                src={Hands}
-                alt="hands"
+                src={Sands}
+                alt="sands"
                 layout="fill"
                 objectFit="contain"
-                className={`${isOrangeHovered ? '-mt-10 -ml-15' : ''} ${
-                  isOrangeHovered ? 'scale-100' : '-ml-4 mb-40'
+                className={`${isOrangeHovered ? '-mt-10 -ml-14' : 'scale-125'} ${
+                  isOrangeHovered ? 'scale-100' : 'ml-50 -mt-8 sm-[ml-6]'
                 }`}
               />
             </motion.div>
           </motion.div>
 
           <motion.div
-            className={`bg-slate-400 w-full md:w-[140%] md:rounded-3xl h-[${isOrangeHovered ? '24rem' : '30rem'}] transition-height duration-500 relative mt-[-18rem] md:mt-[-15rem]`}
+            className={`bg-slate-400 w-full md:w-[140%] md:rounded-3xl h-[${isOrangeHovered ? '24rem' : '30rem'}] transition-height duration-500 relative mt-[-10rem] md:mt-[-15rem]`}
             initial={{ scale: 0.5 }}
             animate={isOrangeHovered ? 'shrunk' : 'expanded'}
             variants={containerVariants}
             transition={{ duration: containerShrinkDuration }}
           >
-            <p className="text-4xl md:text-6xl font-bold py-6 px-6 md:py-10 md:px-10">
-              Extensive Talent Network
+            <p className="text-4xl md:text-6xl font-semibold leading-loose tracking-wider py-6 px-6 md:py-10 md:px-10">
+              High wages
             </p>
             <p className="px-6 text-3xl md:px-10">
-              Unleash the potential of our robust candidate network. We provide your organization with highly qualified
-              professionals who make a difference.
+            Discover well-paying positions that align with your skills and interests, paving the way 
+            for a fulfilling career. Our personalized strategy ensures financial success by matching 
+            your unique qualifications to outstanding opportunities.
             </p>
             {!isOrangeHovered && (
               <motion.div
@@ -129,17 +130,17 @@ function CardSection() {
                 initial="visible"
                 animate={isOrangeHovered ? 'hidden' : 'visible'}
                 transition={{ duration: imageFadeDuration }}
-                className={`absolute w-[13rem] h-[13rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
+                className={`absolute w-[14rem] h-[14rem]  top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
                   isOrangeHovered ? 'scale-100' : ''
                 }`}
               >
-                <Image src={Sand} alt="" layout="fill" objectFit="contain" />
+                <Image src={Wages} alt="" layout="fill" objectFit="contain" />
               </motion.div>
             )}
           </motion.div>
         </div>
 
-        <div className="flex flex-col md:pr-10 md:mt-0">
+        <div className="flex flex-col md:pr-10 md:mt-0 ml-[-5rem] md:ml-[-6rem]">
           <motion.div
             className={`bg-slate-400 w-full md:w-[140%] md:rounded-2xl h-[${isGraySecondHovered ? '24rem' : '30rem'}] ${
               isGraySecondHovered ? 'translate-y-2' : ''
@@ -152,13 +153,13 @@ function CardSection() {
             variants={SecondcontainerVariants}
           >
             <div className="px-6 py-6 md:px-10 md:py-10">
-              <p className="text-3xl md:text-6xl font-bold">Simple To Use</p>
+              <p className="text-3xl md:text-6xl font-semibold leading-loose tracking-wider">250+ Job Opportunities</p>
               <p
                 className={`text-3xl ${isGraySecondHovered ? 'line-clamp-none mt-4' : 'line-clamp-3 mt-2'}`}
               >
-                Streamline and enhance recruitment with our simplified approach. Leverage our expertise and
-                cutting-edge technologies to identify highly qualified candidates, expediting the process for employers
-                and job seekers alike.
+                Explore 250+ job locations. From bustling cities to serene landscapes, we offer diverse 
+                opportunities that align with your ambitions. Expand your horizons and find the 
+                appropriate job location with us.
               </p>
             </div>
             <motion.div
@@ -171,11 +172,11 @@ function CardSection() {
               transition={{ duration: imageFadeDuration }}
             >
               <Image
-                src={Girl}
-                alt="girl"
+                src={location}
+                alt="location"
                 layout="fill"
                 objectFit="contain"
-                className={`${isGraySecondHovered ? '-mt-20 -ml-15' : 'mb-10'}`}
+                className={`${isGraySecondHovered ? '-mt-20 -ml-15' : ' scale-125 ml-[8rem] mt-16 mb-10'}`}
               />
             </motion.div>
           </motion.div>
@@ -187,12 +188,12 @@ function CardSection() {
             variants={containerVariants}
             transition={{ duration: containerShrinkDuration }}
           >
-            <p className="text-4xl md:text-6xl font-bold py-6 px-6 md:py-10 md:px-10">
-              Large Variety Of Jobs
+            <p className="text-4xl md:text-6xl  py-6 px-6 md:py-10 md:px-10 font-semibold leading-loose tracking-wider">
+              Law Labor
             </p>
             <p className="px-6 text-3xl md:px-10 md:z-10">
-              Discover job opportunities effortlessly. Experience a personalized process that connects you seamlessly with
-              the right job opportunities.
+            Discover job opportunities effortlessly. Experience a personalized process that connects 
+            you seamlessly with the right job opportunities.
             </p>
             {!isGraySecondHovered && (
               <motion.div
@@ -200,11 +201,11 @@ function CardSection() {
                 initial="visible"
                 animate={isGraySecondHovered ? 'hidden' : 'visible'}
                 transition={{ duration: imageFadeDuration }}
-                className={`absolute w-[15rem] h-[15rem] top-[70%] left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
+                className={`absolute w-[17rem] h-[17rem] top-[70%] left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
                   isOrangeHovered ? 'scale-100' : ''
                 }`}
               >
-                <Image src={Bag} alt="" layout="fill" objectFit="contain" />
+                <Image src={Hammer} alt="" layout="fill" objectFit="contain" className='h-40 w-40' />
               </motion.div>
             )}
           </motion.div>

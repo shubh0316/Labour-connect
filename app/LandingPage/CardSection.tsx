@@ -48,9 +48,9 @@ function CardSection() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center md:mb-[20rem] md:flex-row">
-        <div className="flex flex-col md:w-2/3 mb-8">
-          <span className="text-lg py-4 md:mt-20 w-full font-semibold text-lc-orange whitespace-nowrap">
+      <div className="flex flex-col items-center justify-center  md:flex-row">
+        <div className="flex flex-col md:w-2/3 md:mt-[-40rem]">
+          <span className="text-lg py-4 md:mt-40 w-full font-semibold text-lc-orange whitespace-nowrap">
             Why Choose Our Dynamic Service
           </span>
           <h2 className="text-5xl font-semibold leading-loose tracking-wider text-zinc-900 whitespace-nowrap animate__animated animate__rubberBand">
@@ -65,7 +65,7 @@ function CardSection() {
           </p>
         </div>
 
-        <div className="flex flex-col ml-0 md:ml-[-8rem]">
+        <div className="flex flex-col  ml-[-5rem] md:mt-[-8rem] md:ml-[-8rem]">
           <motion.div
             className={`bg-lc-orange w-full md:w-[140%] md:rounded-2xl h-[${isOrangeHovered ? '24rem' : '30rem'}] ${
               isOrangeHovered ? 'translate-y-2' : ''
@@ -103,14 +103,14 @@ function CardSection() {
                 layout="fill"
                 objectFit="contain"
                 className={`${isOrangeHovered ? '-mt-10 -ml-14' : 'scale-125'} ${
-                  isOrangeHovered ? 'scale-100' : 'ml-48 -mt-8 sm-[ml-6]'
+                  isOrangeHovered ? 'scale-100' : 'ml-50 -mt-8 sm-[ml-6]'
                 }`}
               />
             </motion.div>
           </motion.div>
 
           <motion.div
-            className={`bg-slate-400 w-full md:w-[140%] md:rounded-3xl h-[${isOrangeHovered ? '24rem' : '30rem'}] transition-height duration-500 relative mt-[-18rem] md:mt-[-15rem]`}
+            className={`bg-slate-400 w-full md:w-[140%] md:rounded-3xl h-[${isOrangeHovered ? '24rem' : '30rem'}] transition-height duration-500 relative mt-[-10rem] md:mt-[-15rem]`}
             initial={{ scale: 0.5 }}
             animate={isOrangeHovered ? 'shrunk' : 'expanded'}
             variants={containerVariants}
@@ -120,8 +120,7 @@ function CardSection() {
               Extensive Talent Network
             </p>
             <p className="px-6 text-3xl md:px-10">
-            Unleash the potential of our robust candidate network. We provide your organization with highly qualified professionals who make a significant impact on your organization through our comprehensive screening process.
-
+              Unleash the potential of our robust candidate network. We provide your organization with highly qualified professionals who make a significant impact on your organization through our comprehensive screening process.
             </p>
             {!isOrangeHovered && (
               <motion.div
@@ -139,7 +138,7 @@ function CardSection() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col md:pr-10 md:mt-0">
+        <div className="flex flex-col md:pr-10 md:mt-0 ml-[-5rem] md:ml-[-6rem]">
           <motion.div
             className={`bg-slate-400 w-full md:w-[140%] md:rounded-2xl h-[${isGraySecondHovered ? '24rem' : '30rem'}] ${
               isGraySecondHovered ? 'translate-y-2' : ''
@@ -157,7 +156,6 @@ function CardSection() {
                 className={`text-3xl ${isGraySecondHovered ? 'line-clamp-none mt-4' : 'line-clamp-3 mt-2'}`}
               >
                 Experience the power of personalization. Unlike traditional staffing agencies, we tailor our approach to your unique needs, organizational culture, and long-term goals. Discover a partnership that truly understands and delivers results.
-
               </p>
             </div>
             <motion.div
@@ -174,7 +172,7 @@ function CardSection() {
                 alt="girl"
                 layout="fill"
                 objectFit="contain"
-                className={`${isGraySecondHovered ? '-mt-20 -ml-15' : ' scale-125 ml-[16rem] mt-16 mb-10'}`}
+                className={`${isGraySecondHovered ? '-mt-20 -ml-15' : ' scale-125 ml-[8rem] mt-16 mb-10'}`}
               />
             </motion.div>
           </motion.div>
@@ -190,8 +188,7 @@ function CardSection() {
               Large Variety Of Jobs
             </p>
             <p className="px-6 text-3xl md:px-10 md:z-10">
-            Discover a wide range of job opportunities. Our platform offers diverse roles, empowering you to discover the appropriate fit and unlock your career potential. 
-
+              Discover a wide range of job opportunities. Our platform offers diverse roles, empowering you to discover the appropriate fit and unlock your career potential.
             </p>
             {!isGraySecondHovered && (
               <motion.div

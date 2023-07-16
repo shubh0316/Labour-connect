@@ -5,7 +5,6 @@ import ScrollSection from "./ScrollSection";
 import Job from "./Job";
 import Hero from "./Hero";
 import Fotter from "./Footer";
-// import Service from "./Service";
 const dashboard = () => {
     return (
     <>

@@ -4,7 +4,7 @@ import HeroSectionAnimation from "./MainAnimation";
 import CardsProper from "./Cards";
 import Hero from "./MainHero";
 import Fotter from "./Fotters";
-import ServicePage from "./ServicePage";
+import Service from "./ServicePage";
 import WrapScroll from "./ScrollingSection";
 const employeePage = () => {
     return (
@@ -13,7 +13,7 @@ const employeePage = () => {
     <Hero />
      <CardsProper />
      <WrapScroll />
-     <ServicePage />
+     <Service />
     <Fotter />
     </>
     )
