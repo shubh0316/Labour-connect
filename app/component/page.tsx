@@ -5,19 +5,15 @@ import ScrollSection from "./ScrollSection";
 import Job from "./Job";
 import Hero from "./Hero";
 import Fotter from "./Footer";
-import Service from "./Service";
+// import Service from "./Service";
 const dashboard = () => {
     return (
     <>
     <Navbar />
     <Hero />
      <CardSection /> 
-
-    
-     <ScrollSection />
-
-  
-    <Job />
+ <ScrollSection />
+<Job />
     <Fotter />
    
 

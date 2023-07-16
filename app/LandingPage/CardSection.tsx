@@ -102,8 +102,8 @@ function CardSection() {
                 alt="hands"
                 layout="fill"
                 objectFit="contain"
-                className={`${isOrangeHovered ? '-mt-10 -ml-15' : ''} ${
-                  isOrangeHovered ? 'scale-100' : '-ml-4 mb-40'
+                className={`${isOrangeHovered ? '-mt-10 -ml-14' : 'scale-125'} ${
+                  isOrangeHovered ? 'scale-100' : 'ml-48 -mt-8'
                 }`}
               />
             </motion.div>
@@ -120,8 +120,8 @@ function CardSection() {
               Extensive Talent Network
             </p>
             <p className="px-6 text-3xl md:px-10">
-              Unleash the potential of our robust candidate network. We provide your organization with highly qualified
-              professionals who make a difference.
+            Unleash the potential of our robust candidate network. We provide your organization with highly qualified professionals who make a significant impact on your organization through our comprehensive screening process.
+
             </p>
             {!isOrangeHovered && (
               <motion.div
@@ -129,7 +129,7 @@ function CardSection() {
                 initial="visible"
                 animate={isOrangeHovered ? 'hidden' : 'visible'}
                 transition={{ duration: imageFadeDuration }}
-                className={`absolute w-[13rem] h-[13rem] top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
+                className={`absolute w-[14rem] h-[14rem]  top-3/4 left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
                   isOrangeHovered ? 'scale-100' : ''
                 }`}
               >
@@ -156,9 +156,8 @@ function CardSection() {
               <p
                 className={`text-3xl ${isGraySecondHovered ? 'line-clamp-none mt-4' : 'line-clamp-3 mt-2'}`}
               >
-                Streamline and enhance recruitment with our simplified approach. Leverage our expertise and
-                cutting-edge technologies to identify highly qualified candidates, expediting the process for employers
-                and job seekers alike.
+                Experience the power of personalization. Unlike traditional staffing agencies, we tailor our approach to your unique needs, organizational culture, and long-term goals. Discover a partnership that truly understands and delivers results.
+
               </p>
             </div>
             <motion.div
@@ -175,7 +174,7 @@ function CardSection() {
                 alt="girl"
                 layout="fill"
                 objectFit="contain"
-                className={`${isGraySecondHovered ? '-mt-20 -ml-15' : 'mb-10'}`}
+                className={`${isGraySecondHovered ? '-mt-20 -ml-15' : ' scale-125 ml-[16rem] mt-16 mb-10'}`}
               />
             </motion.div>
           </motion.div>
@@ -191,8 +190,8 @@ function CardSection() {
               Large Variety Of Jobs
             </p>
             <p className="px-6 text-3xl md:px-10 md:z-10">
-              Discover job opportunities effortlessly. Experience a personalized process that connects you seamlessly with
-              the right job opportunities.
+            Discover a wide range of job opportunities. Our platform offers diverse roles, empowering you to discover the appropriate fit and unlock your career potential. 
+
             </p>
             {!isGraySecondHovered && (
               <motion.div
@@ -200,11 +199,11 @@ function CardSection() {
                 initial="visible"
                 animate={isGraySecondHovered ? 'hidden' : 'visible'}
                 transition={{ duration: imageFadeDuration }}
-                className={`absolute w-[15rem] h-[15rem] top-[70%] left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
+                className={`absolute w-[17rem] h-[17rem] top-[70%] left-3/4 transform -translate-x-1/2 -translate-y-1/2 ${
                   isOrangeHovered ? 'scale-100' : ''
                 }`}
               >
-                <Image src={Bag} alt="" layout="fill" objectFit="contain" />
+                <Image src={Bag} alt="" layout="fill" objectFit="contain" className='h-40 w-40' />
               </motion.div>
             )}
           </motion.div>
