@@ -48,7 +48,7 @@ function ScrollSection() {
 
       </div>
       <div ref={triggerRef}>
-        <div ref={sectionRef} className="scroll-section-inner h-screen md:h-[100vh] w-[300vw] flex flex-row relative overflow-auto -mr-6">
+        <div ref={sectionRef} className="scroll-section-inner h-screen bg-rose-900 md:h-[100vh] w-[300vw] flex flex-row relative overflow-auto -mr-6">
           <div className="scroll-section h-60 mt-52 w-screen md:w-full flex justify-center items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 ">
               <div className="flex mx-8 md:mx-40 mt-20 md:mt-40">

@@ -50,10 +50,10 @@ function CardSection() {
     <>
       <div className="flex flex-col items-center justify-center md:mb-[20rem] md:flex-row">
         <div className="flex flex-col md:w-2/3 mb-8">
-          <span className="text-lg py-4 md:mt-20 w-full text-lc-orange whitespace-nowrap">
+          <span className="text-lg py-4 md:mt-20 w-full font-semibold text-lc-orange whitespace-nowrap">
             Why Choose Our Dynamic Service
           </span>
-          <h2 className="text-5xl font-bold text-zinc-900 whitespace-nowrap animate__animated animate__rubberBand">
+          <h2 className="text-5xl font-semibold leading-loose tracking-wider text-zinc-900 whitespace-nowrap animate__animated animate__rubberBand">
             <span className="text-xl md:text-2xl">Unlock Your Staffing</span>
             <br className="md:hidden" />
             <span className="text-3xl md:text-2xl"> Success With Us</span>
@@ -78,7 +78,7 @@ function CardSection() {
             variants={containerVariants}
           >
             <div className="px-6 py-6 md:px-10 md:py-10">
-              <p className="text-4xl md:text-6xl font-bold w-11/12 md:w-1/2">
+              <p className="text-4xl md:text-6xl font-semibold leading-loose tracking-wider w-11/12 md:w-1/2">
                 Expertise In The Industry
               </p>
               <p
@@ -103,7 +103,7 @@ function CardSection() {
                 layout="fill"
                 objectFit="contain"
                 className={`${isOrangeHovered ? '-mt-10 -ml-14' : 'scale-125'} ${
-                  isOrangeHovered ? 'scale-100' : 'ml-48 -mt-8'
+                  isOrangeHovered ? 'scale-100' : 'ml-48 -mt-8 sm-[ml-6]'
                 }`}
               />
             </motion.div>
@@ -116,7 +116,7 @@ function CardSection() {
             variants={containerVariants}
             transition={{ duration: containerShrinkDuration }}
           >
-            <p className="text-4xl md:text-6xl font-bold py-6 px-6 md:py-10 md:px-10">
+            <p className="text-4xl md:text-6xl font-semibold leading-loose tracking-wider py-6 px-6 md:py-10 md:px-10">
               Extensive Talent Network
             </p>
             <p className="px-6 text-3xl md:px-10">
@@ -152,7 +152,7 @@ function CardSection() {
             variants={SecondcontainerVariants}
           >
             <div className="px-6 py-6 md:px-10 md:py-10">
-              <p className="text-3xl md:text-6xl font-bold">Simple To Use</p>
+              <p className="text-3xl md:text-6xl font-semibold leading-loose tracking-wider">Simple To Use</p>
               <p
                 className={`text-3xl ${isGraySecondHovered ? 'line-clamp-none mt-4' : 'line-clamp-3 mt-2'}`}
               >
@@ -186,7 +186,7 @@ function CardSection() {
             variants={containerVariants}
             transition={{ duration: containerShrinkDuration }}
           >
-            <p className="text-4xl md:text-6xl font-bold py-6 px-6 md:py-10 md:px-10">
+            <p className="text-4xl md:text-6xl  py-6 px-6 md:py-10 md:px-10 font-semibold leading-loose tracking-wider">
               Large Variety Of Jobs
             </p>
             <p className="px-6 text-3xl md:px-10 md:z-10">

@@ -16,15 +16,15 @@ function ApplicationPage() {
           
           </div>
           <div className="tracking-wider gap-1 mt-4 leading-tight">
-            <div className="font-medium text-white    md:text-4xl lg:text-4xl text-3xl">
+            <div className="font-sans text-white    md:text-4xl lg:text-4xl text-3xl">
             Unlock your Staffing 
 
             </div>
-            <div className="font-medium text-white  md:text-4xl lg:text-4xl text-3xl">
+            <div className="font-sans text-white  md:text-4xl lg:text-4xl text-3xl">
             Success with Us
             </div>
           </div>
-          <div className="text-white leading-tight text-justify  sm:text-sm text-md  md:text-lg">
+          <div className="text-white font-sans text-justify  sm:text-sm text-md  md:text-lg">
           Confidence comes through careful planning and proven practices. Our testing ensures optimal performance and seamless maintenance of projects before they are delivered.
 
           </div>
@@ -32,9 +32,9 @@ function ApplicationPage() {
             <button>
               <Link
                 href="https://fms.loadlc.com"
-                className="text-lg font-medium  text-black bg-white rounded-full flex space-x-3 items-center px-8 py-2 transition-all ease-in-out duration-300 hover:-translate-y-0.5"
+                className="text-lg font-sans leading-loose tracking-wider text-white bg-lc-orange rounded-full flex space-x-3 items-center px-8 py-2 transition-all ease-in-out duration-300 hover:-translate-y-0.5"
               >
-                <motion.span whileFocus={{ width: "10%" }} viewport={{ once: true }}>Start Now</motion.span> <BsArrowRight />
+                <motion.span whileFocus={{ width: "10%" }} viewport={{ once: true }}>Book Your Application Now</motion.span> <BsArrowRight />
               </Link>
             </button>
           </div>

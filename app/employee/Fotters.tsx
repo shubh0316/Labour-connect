@@ -1,28 +1,27 @@
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import navLogo from '../Resources/nav-logo.png';
+import navLogo1 from "../Resources/LOBOUR CONNECT-01 (1) 1.png";
+import Container from "./Container";
 
-function Fotter() {
-  
+function Footer() {
   return (
     <div className="bg-footer">
-      
-        <div className="py-20 px-20 grid grid-cols-1 gap-16 justify-between rounded-2xl md:grid-cols-3">
+      <Container>
+        <div className="py-20  grid grid-cols-1 gap-4 justify-between rounded-2xl md:grid-cols-3">
           <div>
-            <Image src={navLogo} quality={100} height={90} alt="menu" />
+            <Image src={navLogo1} quality={100} height={70} alt="menu" />
           </div>
           <div className="flex flex-col gap-4">
-            <div className="font-semibold">Address Details</div>
-            <div className="flex flex-col text-2xl text-gray-900">
+            <div className="font-semibold text-zinc-900">Address Details</div>
+            <div className="flex flex-col text-gray-900">
               <div>6415 Northwest Dr. Unit 17 & 18 </div>
               <div>Mississauga, ON L4V 1X1</div>
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="font-semibold">Contact Details</div>
-            <div className="flex flex-col text-2xl text-gray-900 justify-between gap-3">
+            <div className="font-semibold text-zinc-900">Contact Details</div>
+            <div className="flex flex-col text-gray-900 justify-between gap-3">
               <div>(888)956-2356</div>
               <div>
                 <a href="mailto:info@loadlc.com" className="hover:underline">
@@ -33,7 +32,6 @@ function Fotter() {
                 <a
                   href="https://www.loadlc.com"
                   target="_blank"
-                  rel="noreferrer"                  
                   className="hover:underline"
                 >
                   https://www.loadlc.com
@@ -42,9 +40,9 @@ function Fotter() {
             </div>
           </div>
         </div>
-      
+      </Container>
     </div>
   );
 }
 
-export default Fotter;
+export default Footer;
