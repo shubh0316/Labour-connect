@@ -32,6 +32,7 @@ function Footer() {
                 <a
                   href="https://www.loadlc.com"
                   target="_blank"
+                  rel="noreferrer"
                   className="hover:underline"
                 >
                   https://www.loadlc.com
