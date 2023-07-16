@@ -1,7 +1,8 @@
 import React from "react";
 import "animate.css";
+import Container from "./Container";
 
-export default function Service() {
+ function Service() {
   return (
     <div>
       <div className="bg-zinc-900 w-full min-h-screen">
@@ -110,3 +111,12 @@ export default function Service() {
     </div>
   );
 }
+function ServicePage(){
+  return(
+    <Container>
+      <Service />
+    </Container>
+  )
+}
+
+export default ServicePage;

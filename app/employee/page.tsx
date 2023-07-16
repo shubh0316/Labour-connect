@@ -1,20 +1,19 @@
 
 import Navbar from "./EmployeeNavbar";
 import HeroSectionAnimation from "./MainAnimation";
-import CardSection from "./Cards";
-import ScrollSection from "./ScrollingSection";
+import CardsProper from "./Cards";
 import Hero from "./MainHero";
 import Fotter from "./Fotters";
-import Service from "./ServicePage";
+import ServicePage from "./ServicePage";
+import WrapScroll from "./ScrollingSection";
 const employeePage = () => {
     return (
     <>
     <Navbar />
     <Hero />
-     <CardSection /> 
-  
-     <ScrollSection />
-     <Service />
+     <CardsProper />
+     <WrapScroll />
+     <ServicePage />
     <Fotter />
     </>
     )

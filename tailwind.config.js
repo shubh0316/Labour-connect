@@ -8,6 +8,15 @@ module.exports = {
  
   theme: {
     extend: {
+      colors: {
+        "lc-orange": "#FF7D33",
+        black: "#000",
+        white: "#fff",
+        footer:"#F2F2F2",
+        beta:"#202020"
+        
+      },
+  
       animation: {
         marquee: 'marquee 25s linear infinite',
         marquee2: 'marquee2 25s linear infinite',

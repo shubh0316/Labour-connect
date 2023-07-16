@@ -5,14 +5,13 @@ import navLogo1 from "../Resources/LOBOUR CONNECT-01 (1) 1.png";
 import Image from "next/image";
 import menuImg from "../Resources/menu.svg";
 import Link from "next/link";
-import Container from "../LandingPage/Container";
+import Container from "./Container";
 
 const navlinks = [
   { title: "Features", destination: "#" },
   { title: "Resources", destination: "#" },
   { title: "Pricing", destination: "#" },
-  { title: "About", destination: "#" },
-  { title: "Contact", destination: "#" },
+ 
 ];
 
 function MobileNavExtended() {
@@ -69,7 +68,7 @@ export function LoginButton() {
   return (
     <Link
       href="https://fms.loadlc.com"
-      className="border border-black  text-black  px-6 py-1 rounded-full text-sm transition-all ease-in-out hover:scale-110"
+      className="border border-black  text-black  px-9 py-3 rounded-full text-lg transition-all ease-in-out hover:scale-100"
     >
       Log In
     </Link>
@@ -79,7 +78,7 @@ export function SignButton() {
   return (
     <Link
       href="https://fms.loadlc.com"
-      className="border border-black  text-black  px-6 py-1 rounded-full text-sm transition-all ease-in-out hover:scale-110"
+      className="border border-black  text-white bg-black px-9 py-3 rounded-full text-lg transition-all ease-in-out hover:scale-110"
     >
       Sign In
     </Link>
@@ -111,8 +110,8 @@ export function DesktopNav() {
         ))}
       </ul>
       <div className="space-x-10">
-      <LoginButton />
       <SignButton />
+      <LoginButton />     
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import Link from "next/link";
 import navLogo from '../Resources/nav-logo.png';
 
 function Fotter() {
+  
   return (
     <div className="bg-footer">
       
@@ -32,7 +33,8 @@ function Fotter() {
                 <a
                   href="https://www.loadlc.com"
                   target="_blank"
-  rel="noreferrer"                  className="hover:underline"
+                  rel="noreferrer"                  
+                  className="hover:underline"
                 >
                   https://www.loadlc.com
                 </a>

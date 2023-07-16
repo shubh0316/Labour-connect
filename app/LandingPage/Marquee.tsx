@@ -1,27 +1,28 @@
 import React from 'react';
+import Marquee from 'react-fast-marquee';
 
-function Marquee() {
+function Marqueecomponent() {
   return (
     <div>
-      <div className="relative flex overflow-x-hidden">
-  <div className="py-12 animate-marquee whitespace-nowrap">
-    <span className="mx-4 text-white font-serif text-2xl">Labour Connect</span>
-    <span className="mx-4  text-white  font-serif text-2xl">Labour Conenct</span>
-    <span className="mx-4 text-white  font-serif text-2xl">Labour Connect</span>
-    <span className="mx-4  text-white font-serif text-2xl">Labour Connect</span>
-    <span className="mx-4 text-white font-serif text-2xl">Labour Connect</span>
-  </div>
-
-  <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-    <span className="mx-4 text-white font-serif text-2xl">Labour Connect</span>
-    <span className="mx-4  text-white font-serif text-2xl">Labour Connect</span>
-    <span className="mx-4 text-white font-serif  text-2xl">Labour Connect</span>
-    <span className="mx-4 text-white font-serif text-2xl">Labour Connect</span>
-    <span className="mx-4 text-white font-serif  text-2xl">Labour Connect</span>
-  </div>
-</div>
+      <Marquee direction="left" speed={80}>
+        <span className="mx-2 text-black font-serif text-sm sm:text-base lg:text-lg xl:text-xl">
+          Labour Connect
+        </span>
+        <span className="mx-2 text-black font-serif text-sm sm:text-base lg:text-lg xl:text-xl">
+          Labour Connect
+        </span>
+        <span className="mx-2 text-black font-serif text-sm sm:text-base lg:text-lg xl:text-xl">
+          Labour Connect
+        </span>
+        <span className="mx-2 text-black font-serif text-sm sm:text-base lg:text-lg xl:text-xl">
+          Labour Connect
+        </span>
+        <span className="mx-2 text-black font-serif text-sm sm:text-base lg:text-lg xl:text-xl">
+          Labour Connect
+        </span>
+      </Marquee>
     </div>
-  )
+  );
 }
 
-export default Marquee
+export default Marqueecomponent;

@@ -1,7 +1,8 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger"
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Container from "./Container";
 import { BsFill1CircleFill , BsFill2CircleFill, BsFill3CircleFill} from "react-icons/bs";
 
 function ScrollSection() {
@@ -114,5 +115,12 @@ function ScrollSection() {
     </section>
   );
 }
+function WrapScroll(){
+  return (
+    <Container>
+      <ScrollSection />
+    </Container>
+  )
+}
 
-export default ScrollSection;
+export default WrapScroll;

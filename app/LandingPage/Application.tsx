@@ -1,46 +1,54 @@
-import React from 'react';
-import Image from 'next/image';
-import Macbook from '../Resources/Macbook.png';
-import { BsArrowRight } from 'react-icons/bs';
+"use client";
+import React from "react";
+import Image from "next/image";
+import Macbook from "../Resources/Macbook.png";
+import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
+import Container from "./Container";
+import { motion } from "framer-motion";
 
-const Application = () => {
+function ApplicationPage() {
   return (
-    <div className="relative bg-zinc-950 border-cyan-400 mt-20 ">
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-screen-lg mx-auto px-2">
-        <div className="lg:w-2/3 text-left mr-[4%]">
-          <div className="text-orange-500 mt-10 mb-6  text-2xl sm:text-3xl ml-6 sm:ml-0">
-            Our Staffing Services Process
-          </div>
-          <div className="text-white text-6xl font-bold ml-4 sm:ml-0">
-            Unlock Your Staffing Success With Us
-          </div>
-          <div className="text-white mt-6 text-sm sm:text-2xl font-sans ml-4 sm:ml-0">
-           Boost your staffing success with our dynamic services. With us, you&apos;ll harness 
-           personalized solutions and expert support. Maximize your potential and achieve
-           extraordinary results. Join us today and revolutionize your staffing approach.
-           Confidence comes through careful planning and proven practices. Our testing ensures 
-           optimal performance through careful planning and proven practices. Our testing ensures 
-           optimal performance and seamless maintenance of projects before they are delivered.
-          </div>
+    <Container>
+      <div className=" bg-black  rounded-2xl px-10 items-center flex flex-col-reverse   md:flex-row justify-evenly py-12">
+        <div className="flex flex-col gap-4  mt-4">
+          <div className="text-fms-orange text-left text-xs mt-2 text-medium lg:text-sm">
           
-          <button className="flex items-center justify-center gap-4 text-xl sm:text-2xl w-56 h-12 mt-8 ml-4 sm:ml-0 rounded-full bg-orange-500 text-white hover:bg-orange-600 transform hover:scale-105">
-            Explore Jobs <BsArrowRight size={32} />
-          </button>
-        </div>
-        <div className="lg:w-1/2 flex flex-end">
-          <div className="hidden lg:block">
-            <Image
-              className="mt-40 ml-[17rem] w-auto h-auto"
-              src={Macbook}
-              alt=""
-              width={900}
-              height={800}
-            />
           </div>
+          <div className="tracking-wider gap-1 mt-4 leading-tight">
+            <div className="font-medium text-white    md:text-4xl lg:text-4xl text-3xl">
+              Unlock Your Fleet
+            </div>
+            <div className="font-medium text-white  md:text-4xl lg:text-4xl text-3xl">
+              Safety With us
+            </div>
+          </div>
+          <div className="text-white leading-tight text-justify  sm:text-sm text-md  md:text-lg">
+          Supercharge your fleet operations with LC&apos;s Fleet Management System (FMS). Streamline driver and vehicle management, optimize routes, and maximize productivity. Start now to unlock the power of efficient fleet management.
+          </div>
+          <div>
+            <button>
+              <Link
+                href="https://fms.loadlc.com"
+                className="text-lg font-medium  text-black bg-white rounded-full flex space-x-3 items-center px-8 py-2 transition-all ease-in-out duration-300 hover:-translate-y-0.5"
+              >
+                <motion.span whileFocus={{ width: "10%" }} viewport={{ once: true }}>Start Now</motion.span> <BsArrowRight />
+              </Link>
+            </button>
+          </div>
+        </div>
+        <div className="max-w-xs md:max-w-sm">
+          <Image
+            src={Macbook}
+            quality={100}
+            className="hover:scale-110 duration-300"
+            height={500}
+            alt="menu"
+          />
         </div>
       </div>
-    </div>
+    </Container>
   );
-};
+}
 
-export default Application;
+export default ApplicationPage;

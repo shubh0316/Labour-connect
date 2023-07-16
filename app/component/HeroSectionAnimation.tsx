@@ -8,7 +8,7 @@ import MacbookCenter from '../Resources/MacbookCenter.png';
 
 function HeroSectionAnimation() {
   return (
-    <div className="relative flex flex-row">
+    <div className="relative flex flex-row mt-">
       <div className="relative z-10 flex flex-col">
         <Image
           className="absolute top-0 left-0 z-10 animate__animated animate__fadeInRight"

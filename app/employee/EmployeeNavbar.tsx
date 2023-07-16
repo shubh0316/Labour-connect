@@ -1,178 +1,130 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import navLogo from '../Resources/Group 1000002110.png';
+"use client";
+
+import React, { useState } from "react";
 import navLogo1 from "../Resources/LOBOUR CONNECT-01 (1) 1.png";
+import Image from "next/image";
+import menuImg from "../Resources/menu.svg";
+import Link from "next/link";
+import Container from "./Container";
 
-const Navbar = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isScrolled, setScrolled] = useState(false);
+const navlinks = [
+  { title: "Features", destination: "#" },
+  { title: "Resources", destination: "#" },
+  { title: "Pricing", destination: "#" },
+  { title: "About", destination: "#" }, // Add additional link
+  { title: "Contact", destination: "#" }, // Add additional link
+];
 
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isTop = window.scrollY < 100;
-      setScrolled(!isTop);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+function MobileNavExtended() {
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 h-20 transition-colors duration-300  ${
-        isScrolled ? 'bg-white w-45 rounded-3xl mt-4 h-scrren shadow-2xl' : ''
-      }`}
-    >
-      <div className="max-w-screen-xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <a
-              href="https://fms.loadlc.com/login"
-              className={`flex-shrink-0 ${
-                isScrolled ? 'text-black ' : 'text-white'
-              }`}
+    <div className="flex flex-col text-center items-center justify-evenly text-black bg-white gap-8 py-8 drop-shadow-2xl rounded-b-2xl">
+      <ul className="flex flex-col gap-8">
+        {navlinks.map((link) => (
+          <li key={link.title}>
+            <Link
+              className="tracking-wide leading-tight"
+              href={link.destination}
             >
-              <Image
-                src={ navLogo1}
-                className={`h-12 w-auto ${
-                  isScrolled ? 'mt-4' : ''
-                }`}
-                alt="labour connect"
-              />
-            </a>
-          </div>
-          <div className="hidden md:flex md:items-center md:space-x-4 ">
-            <a
-              href="#about"
-              className={`transform hover:scale-125 px-3 py-2 rounded-md ${
-                isScrolled ? 'text-black mt-4 text-xl' : 'text-black text-lg'
-              }`}
-            >
-              About
-            </a>
-            <a
-              href="#features"
-              className={`transform hover:scale-125 px-3 py-2 rounded-md ${
-                isScrolled ? 'text-black mt-4 text-xl' : 'text-black  text-lg'
-              }`}
-            >
-              Features
-            </a>
-            <a
-              href="#pricing"
-              className={`transform hover:scale-125 px-3 py-2 rounded-md ${
-                isScrolled ? 'text-black mt-4 text-xl' : 'text-black  text-lg'
-              }`}
-            >
-              Pricing
-            </a>
-          </div>
-          <div className="flex items-center">
-            <button
-              className={`h-14 w-32 md:w-40 rounded-full bg-orange-600 text-xl mx-3 text-white hover:scale-110 hidden md:block ${
-                isScrolled ? 'text-white mt-4' : 'text-white '
-              }`}
-            >
-              Sign Up
-            </button>
-            <button
-              className={`w-32  h-14 md:w-40 rounded-full bg-white text-black border-2 border-black text-xl mx-3 hover:scale-110 hidden md:block ${
-                isScrolled ? 'text-black mt-4' : 'text-black'
-              }`}
-            >
-              Log In
-            </button>
-          </div>
-          <div className="md:hidden">
-            <button
-              type="button"
-              className="p-2 text-gray-800 hover:text-blue-700 focus:outline-none focus:text-blue-700"
-              onClick={toggleMenu}
-            >
-              <svg
-                className={`h-6 w-6 ${isMenuOpen ? 'hidden' : 'block'}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              <svg
-                className={`h-6 w-6 ${isMenuOpen ? 'block' : 'hidden'}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
+              {link.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="space-x-10">
+      <LoginButton />
+      <SignButton />
       </div>
-      {isMenuOpen && (
-        <div
-          className={`md:hidden px-2 pt-2 pb-4 ${
-            isScrolled ? '' : 'h-screen bg-slate-200'
-          }`}
-        >
-          <a
-            href="#about"
-            className={`block text-black hover:text-blue-700 py-2 mx-80 hover:textShadow duration-500 hover:translate-y-[-5px] text-xl ${
-              isScrolled ? 'text-black' : 'text-white flex-row'
-            }`}
-          >
-            About
-          </a>
-          <a
-            href="#features"
-            className={`block text-black hover:text-blue-700 py-2 mx-80 hover:textShadow duration-500 hover:translate-y-[-5px] text-xl ${
-              isScrolled ? 'text-black' : 'text-white flex-row'
-            }`}
-          >
-            Features
-          </a>
-          <a
-            href="#pricing"
-            className={`block text-black hover:text-blue-700 py-2 mx-80 hover:textShadow duration-500 hover:translate-y-[-5px] text-xl ${
-              isScrolled ? 'text-black' : 'text-white flex-row'
-            }`}
-          >
-            Pricing
-          </a>
-          <a
-            href="#signup"
-            className="text-gray-800 hover:text-blue-700 px-3 py-2 rounded-full hidden md:block"
-          >
-            Sign Up
-          </a>
-          <a
-            href="#login"
-            className="text-gray-800 hover:text-blue-700 px-3 py-2 rounded-full hidden md:block"
-          >
-            Log In
-          </a>
+    </div>
+  );
+}
+
+export function MobileNav() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <div className="flex py-4 items-baseline relative sm:hidden">
+        <div className="text-black absolute left-2 xm:left-4 top-5">
+          <Image onClick={() => setOpen((o) => !o)} src={menuImg} alt="menu" />
+        </div>
+        <figure className="mx-auto">
+          <Image
+            src={navLogo1 }
+            className="object-contain"
+            alt="logo"
+            height={32}
+            quality={100}
+          />
+        </figure>
+      </div>
+      {open && (
+        <div className="absolute w-full left-0 z-50">
+          <MobileNavExtended />
         </div>
       )}
-    </nav>
+    </>
   );
-};
+}
+
+export function LoginButton() {
+  return (
+    <Link
+      href="https://fms.loadlc.com"
+      className="border border-black  text-black  px-6 py-1 rounded-full text-sm transition-all ease-in-out hover:scale-110"
+    >
+      Log In
+    </Link>
+  );
+}
+export function SignButton() {
+  return (
+    <Link
+      href="https://fms.loadlc.com"
+      className="border border-black  text-black  px-6 py-1 rounded-full text-sm transition-all ease-in-out hover:scale-110"
+    >
+      Sign In
+    </Link>
+  );
+}
+
+export function DesktopNav() {
+  return (
+    <div className="py-4 items-center justify-between relative hidden sm:flex">
+      <figure>
+        <Image
+          src={navLogo1 }
+          className="object-contain"
+          alt="logo"
+          height={32}
+          quality={100}
+        />
+      </figure>
+      <ul className="flex space-x-8">
+        {navlinks.map((link) => (
+          <li key={link.title}>
+            <Link
+              className="text-black hover:border-b-2 hover:translate-y-8 px-1 border-fms-orange tracking-wide leading-tight transition-all ease-in-out"
+              href={link.destination}
+            >
+              {link.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="space-x-10">
+      <LoginButton />
+      <SignButton />
+      </div>
+    </div>
+  );
+}
+
+function Navbar() {
+  return (
+    <Container>
+      <MobileNav />
+      <DesktopNav />
+    </Container>
+  );
+}
 
 export default Navbar;
